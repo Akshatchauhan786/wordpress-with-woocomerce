@@ -1,0 +1,19 @@
+[25-Apr-2024 03:54:47 UTC] PHP Parse error:  syntax error, unexpected token ":", expecting "]" in /home3/rmsdemoc/public_html/projects/pushan_trading/wp-content/themes/pushan_trading/functions.php on line 732
+[30-Apr-2024 10:30:26 UTC] PHP Warning:  Undefined property: stdClass::$business_photo in /home3/rmsdemoc/public_html/projects/pushan_trading/wp-content/plugins/widget-google-reviews/includes/core/class-connect-google.php on line 232
+[30-Apr-2024 10:30:29 UTC] PHP Warning:  Undefined property: stdClass::$business_photo in /home3/rmsdemoc/public_html/projects/pushan_trading/wp-content/plugins/widget-google-reviews/includes/core/class-connect-google.php on line 107
+[03-May-2024 04:40:02 UTC] WordPress database error Table 'rmsdemoc_pushan_trading.wp_wpfb_post_templates' doesn't exist for query SELECT COUNT(*) FROM wp_wpfb_post_templates WHERE template_type='widget' made by do_action('wp_ajax_activate-plugin'), WP_Hook->do_action, WP_Hook->apply_filters, wp_ajax_activate_plugin, activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wp-google-places-review-slider/wp-google-reviews.php'), run_WP_Google_Reviews, WP_Google_Reviews->__construct, WP_Google_Reviews->load_dependencies, require_once('/plugins/wp-google-places-review-slider/public/class-wp-google-reviews-widget.php')
+[03-May-2024 04:40:54 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/rmsdemoc/public_html/projects/pushan_trading/wp-content/plugins/wp-google-places-review-slider/admin/partials/googlecrawl.php on line 69
+[03-May-2024 04:40:54 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/rmsdemoc/public_html/projects/pushan_trading/wp-content/plugins/wp-google-places-review-slider/admin/partials/googlecrawl.php on line 70
+[03-May-2024 04:40:54 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/rmsdemoc/public_html/projects/pushan_trading/wp-content/plugins/wp-google-places-review-slider/admin/partials/googlecrawl.php on line 71
+[03-May-2024 04:40:54 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/rmsdemoc/public_html/projects/pushan_trading/wp-content/plugins/wp-google-places-review-slider/admin/partials/googlecrawl.php on line 72
+[03-May-2024 04:40:54 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/rmsdemoc/public_html/projects/pushan_trading/wp-content/plugins/wp-google-places-review-slider/admin/partials/googlecrawl.php on line 72
+[10-Jun-2024 16:40:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/rmsdemoc/public_html/projects/pushan_trading/wp-content/plugins/woocommerce/vendor/jetpack-autoloader/class-autoloader.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home3/rmsdemoc/public_html/projects/pushan_trading/wp-content/plugins/woocommerce/vendor/autoload_packages.php:12
+Stack trace:
+#0 /home3/rmsdemoc/public_html/projects/pushan_trading/wp-content/plugins/woocommerce/src/Autoloader.php(37): require()
+#1 /home3/rmsdemoc/public_html/projects/pushan_trading/wp-content/plugins/woocommerce/woocommerce.php(31): Automattic\WooCommerce\Autoloader::init()
+#2 /home3/rmsdemoc/public_html/projects/pushan_trading/wp-settings.php(517): include_once('/home3/rmsdemoc...')
+#3 /home3/rmsdemoc/public_html/projects/pushan_trading/wp-config.php(96): require_once('/home3/rmsdemoc...')
+#4 /home3/rmsdemoc/public_html/projects/pushan_trading/wp-load.php(50): require_once('/home3/rmsdemoc...')
+#5 /home3/rmsdemoc/public_html/projects/pushan_trading/wp-admin/admin-ajax.php(22): require_once('/home3/rmsdemoc...')
+#6 {main}
+  thrown in /home3/rmsdemoc/public_html/projects/pushan_trading/wp-content/plugins/woocommerce/vendor/autoload_packages.php on line 12

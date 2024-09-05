@@ -1,0 +1,4 @@
+[22-Apr-2024 03:37:29 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home3/rmsdemoc/public_html/projects/pushan_trading/wp-content/themes/pushan_trading/index.php:18
+Stack trace:
+#0 {main}
+  thrown in /home3/rmsdemoc/public_html/projects/pushan_trading/wp-content/themes/pushan_trading/index.php on line 18

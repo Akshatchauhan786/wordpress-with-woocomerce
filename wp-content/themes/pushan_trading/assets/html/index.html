@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-main-header">
+            <div class="container-fluid">
+                <div class="custom-container">
+                    <div class="row">
+                        <div class="top-header">
+                            <div class="top-left">
+                                <ul>
+                                    <li><a href="#">
+                                            <!-- <span><i class="fa fa-map-marker" aria-hidden="true"></i> </span>-->
+                                            <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" width="18"
+                                                height="22" viewBox="0 0 18 22" fill="none">
+                                                <path
+                                                    d="M9 18.8995L13.9497 13.9497C16.6834 11.2161 16.6834 6.78392 13.9497 4.05025C11.2161 1.31658 6.78392 1.31658 4.05025 4.05025C1.31658 6.78392 1.31658 11.2161 4.05025 13.9497L9 18.8995ZM9 21.7279L2.63604 15.364C-0.87868 11.8492 -0.87868 6.15076 2.63604 2.63604C6.15076 -0.87868 11.8492 -0.87868 15.364 2.63604C18.8787 6.15076 18.8787 11.8492 15.364 15.364L9 21.7279ZM9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.8954 7 7 7.89543 7 9C7 10.1046 7.8954 11 9 11ZM9 13C6.79086 13 5 11.2091 5 9C5 6.79086 6.79086 5 9 5C11.2091 5 13 6.79086 13 9C13 11.2091 11.2091 13 9 13Z"
+                                                    fill="#ee5c03"></path>
+                                            </svg>Westheimer 96
+                                            Road 1734.
+                                        </a></li>
+                                    <li><a href="#"><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                                            sales@pusantrading.com
+                                        </a></li>
+                                    <li><a href="#">
+                                            <!--<span><i class="fa fa-clock-o" aria-hidden="true"></i></span>--><svg
+                                                class="clock-icon" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="currentColor">
+                                                <path
+                                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM13 12H17V14H11V7H13V12Z">
+                                                </path>
+                                            </svg> Mon - Sat
+                                            10.00 - 18.00</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="top-right">
+                                <ul>
+                                    <li><a href="#">Follow Us:</a></li>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg header_main main-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="logo" class="img-fluid">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none"><path d="M8.55566 11H1.55566C1.29045 11 1.03609 11.1054 0.848557 11.2929C0.661021 11.4804 0.555664 11.7348 0.555664 12V19C0.555664 19.2652 0.661021 19.5196 0.848557 19.7071C1.03609 19.8946 1.29045 20 1.55566 20H8.55566C8.82088 20 9.07523 19.8946 9.26277 19.7071C9.45031 19.5196 9.55566 19.2652 9.55566 19V12C9.55566 11.7348 9.45031 11.4804 9.26277 11.2929C9.07523 11.1054 8.82088 11 8.55566 11ZM7.55566 18H2.55566V13H7.55566V18ZM19.5557 0H12.5557C12.2904 0 12.0361 0.105357 11.8486 0.292893C11.661 0.48043 11.5557 0.734784 11.5557 1V8C11.5557 8.26522 11.661 8.51957 11.8486 8.70711C12.0361 8.89464 12.2904 9 12.5557 9H19.5557C19.8209 9 20.0752 8.89464 20.2628 8.70711C20.4503 8.51957 20.5557 8.26522 20.5557 8V1C20.5557 0.734784 20.4503 0.48043 20.2628 0.292893C20.0752 0.105357 19.8209 0 19.5557 0ZM18.5557 7H13.5557V2H18.5557V7ZM19.5557 11H12.5557C12.2904 11 12.0361 11.1054 11.8486 11.2929C11.661 11.4804 11.5557 11.7348 11.5557 12V19C11.5557 19.2652 11.661 19.5196 11.8486 19.7071C12.0361 19.8946 12.2904 20 12.5557 20H19.5557C19.8209 20 20.0752 19.8946 20.2628 19.7071C20.4503 19.5196 20.5557 19.2652 20.5557 19V12C20.5557 11.7348 20.4503 11.4804 20.2628 11.2929C20.0752 11.1054 19.8209 11 19.5557 11ZM18.5557 18H13.5557V13H18.5557V18ZM8.55566 0H1.55566C1.29045 0 1.03609 0.105357 0.848557 0.292893C0.661021 0.48043 0.555664 0.734784 0.555664 1V8C0.555664 8.26522 0.661021 8.51957 0.848557 8.70711C1.03609 8.89464 1.29045 9 1.55566 9H8.55566C8.82088 9 9.07523 8.89464 9.26277 8.70711C9.45031 8.51957 9.55566 8.26522 9.55566 8V1C9.55566 0.734784 9.45031 0.48043 9.26277 0.292893C9.07523 0.105357 8.82088 0 8.55566 0ZM7.55566 7H2.55566V2H7.55566V7Z" fill="#616161"></path></svg>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Catalogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="search_btn">
+            <div class="search_item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span><i class="fa fa-times" aria-hidden="true"></i></span>
+            </div>
+              
+                <div class="search_head">
+                    <span class="fa fa-search"></span>
+                    <input placeholder="Searching....">
+                  </div>
+           
+                <div>
+                <a href="https://wa.me/+971 4 221 6013">Get In Touch<i class="fa fa-whatsapp" aria-hidden="true"></i></a></div>
+          </div>
+        </div>
+      </nav>
+
+
+        <!-- offcanvas -->
+
+        <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button> -->
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                    <img class="img-fluid" src="img/green-logo.png" alt="">
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus fugit, tempora nisi quisquam
+                    amet asperiores a excepturi voluptatem recusandae suscipit quae cupiditate et officiis pariatur
+                    voluptas ullam commodi obcaecati repellat nobis quasi consequuntur assumenda.
+
+                </p>
+            </div>
+        </div>
+        <!-- offcanvas -->
+        <!-- modale-popo -->
+
+
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+
+                <a class="close" href="#"><i class="fa fa-search search-2" aria-hidden="true"></i>
+                </a>
+                <div class="content">
+                    <input type="text" placeholder="search">
+
+                </div>
+            </div>
+        </div>
+        <!-- modale end -->
+    </header>
+
+    <section class="banner">
+        
+        <div class="slick-carousel">
+            <div class="slider-img" style="background-image: url(./img/slide-5.jpg); ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                <div class="text-box">
+                    <div class="content-text">
+                        <p><span>love to build your dream</span></p>
+                        <h1>Quility Construction Building Service</h1>
+                        <p>Our vans are fitted with high pressure jetting units which will clear blocked drain safely,
+                            easily and professionally.
+                        </p>
+
+                        <div class="btn-box">
+                            <a href="#" class="btn-contact">Contact Us <span><img class="arrow-img banner-icon"
+                                        src="img/MicrosoftTeams-image.png" alt=""></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+</div>
+
+    </section>
+
+
+    
+    <section class="sec-2">
+        <div class="custom-container custom2 container">
+            <div class="row">
+                <div class="sec-2-main">
+                    <div class="items-box">
+                        <h2 class="text-white fs">Marine Industry</h2>
+                        <p class="text-white">
+                            Leading UAE marine supplier offering cabin, deck, engine, and oilfield products.
+                            Trusted by industry leaders.
+                        </p>
+                        <div class="img-box">
+                            <img class="img-fluid" src="img/helmet.png" alt="">
+                        </div>
+                    </div>
+                    <div class="items-box">
+                        <h2 class="text-white fs">Chemical Industry</h2>
+                        <p class="text-white">
+                            Trusted supplier of chemicals, solvents, reagents, and equipment for industry
+needs.
+                        </p>
+                        <div class="img-box">
+                            <img class="img-fluid" src="img/construction.png" alt="">
+                        </div>
+                    </div>
+                    <div class="items-box">
+                        <h2 class="text-white fs">Retail Industry</h2>
+                        <p class="text-white">
+                            Premier retail solutions provider with comprehensive product range for all retail
+demands and preferences.
+                        </p>
+                        <div class="img-box">
+                            <img class="img-fluid" src="img/labor.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sec-3">
+        <div class="container-fluid">
+            <div class="row mob-gap">
+                <div class="col-md-12 col-lg-7">
+                    <div class="tab-box-left">
+                        <span class="span-text">WELCOME TO PUSAN TRADING CO. LLC.</span>
+                        <h2>Your One-Stop Shop for All Your Marine Needs Since 1991.</h2>
+
+                        <div class="about-img">
+                            <img class="img-fluid" src="img/about_002.jpg" alt="">
+                        </div>
+
+                        <div class="counter-box">
+                            <div class="counter-number">
+                                <span class="count" data-number="10000">10000</span><span>+</span>
+                                <p>Product SKUs</p>
+                            </div>
+                            <div class="counter-number">
+                                <span class="count" data-number="1000">1000</span><span>+</span>
+                                <p>Happy Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-5">
+                    <div class="tab-box-right">
+                        <img class="img-fluid" src="img/about_001.jpg" alt="">
+                    </div>
+                    <div class="tab-boxs home_tab">
+
+
+                        <div id="container">
+                            <div class="tabs-nav">
+                                <ul>
+                                    <li class="active"><a href="#tab1">Our History</a></li>
+                                    <li><a href="#tab2">Our Mission </a></li>
+                                    <li><a href="#tab3"> Our Vision</a></li>
+
+                                </ul>
+                            </div>
+
+                            <section class="tabs-content">
+                                <div id="tab1">
+                                    <!-- <h3>Our History </h3> -->
+                                    <p>Pusan Trading Co. LLC was established in 1991 as a professional ship store
+                                        supplying company in the UAE. Our main activities include providing cabin,
+                                        deck, engine, and marine supplies, as well as servicing the oilfield sector and
+                                        regularly supplying local ship chandlers.</p>
+                                    <ul class="tab-list">
+                                        <li>Reliable Supply</li>
+                                        <li>Competitive Pricing</li>
+                                        <li>Fostering Lasting Relationships</li>
+                                    </ul>
+
+                                    <a href="https://wa.me/ +971 4 221 6013" class="touch-btn"><span><img class="whats-img" src="img/whatsapp.png" alt=""></span> Get in Touch </a>
+
+                                </div>
+
+                                <div id="tab2">
+                                    <!-- <h3>Our Mission </h3> -->
+                                    <p>Our mission at Pusan Trading Co. LLC is to be the leading provider of marine
+                                        supplies in the UAE. With a commitment to excellence, we aim to deliver
+                                        exceptional service and innovative solutions to meet the diverse needs of our
+                                        clients.</p>
+                                    <ul class="tab-list">
+                                        <li>Uphold Professionalism and Integrity</li>
+                                        <li>Innovate to Address Industry Challenges</li>
+                                        <li>Continuously Exceed Expectations
+                                        </li>
+
+                                    </ul>
+                                    <a href="https://wa.me/ +971 4 221 6013" class="touch-btn"><span><img class="whats-img" src="img/whatsapp.png" alt=""></span> Get in Touch </a>
+                                </div>
+
+                                <div id="tab3">
+                                    <!-- <h3> Our Vision</h3> -->
+                                    <p>At Pusan Trading Co. LLC, we envision ourselves as pioneers in the marine
+                                        supply industry of the UAE. We strive to set new standards in reliability and
+                                        customer satisfaction, ensuring that every interaction with us leaves a lasting
+                                        impression of quality and trust.</p>
+                                    <ul class="tab-list">
+                                        <li>Be UAE's Top Marine Supplier</li>
+                                        <li>Diverse Marine Product Range</li>
+                                        <li>Exemplary Client Services</li>
+
+                                    </ul>
+
+                                    <a href="https://wa.me/ +971 4 221 6013" class="touch-btn"><span><img class="whats-img" src="img/whatsapp.png" alt=""></span> Get in Touch </a>
+                                </div>
+
+
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="OUR-SERVICES">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-12 col-lg-9 p-0">
+                    <div class="tab-box-left our-box">
+                        <span>OUR SERVICES</span>
+                        <h2>We Provide Our Services All Over The World
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-3 p-0">
+                    <div class="btn-box2_our_service"><a href="#" class="btn-contact" tabindex="0">View All Solutions <span><img class="arrow-img banner-icon" src="img/MicrosoftTeams-image.png" alt=""></span>
+                    </a></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="searvice-box">
+                    <div class="box-sear">
+                        <div class="bg-disc">
+                            <div class="searvice-icon">
+                                <img class="img-fluid" src="img/helmet.png" alt="">
+                            </div>
+
+                            <div class="searvice-disc">
+                                <h3>General Contracting</h3>
+                                <p>Offering both design and construct services under one contract, stream the process
+                                    and potentially.</p>
+                                <a href="#" class="read-btn">Read More <span><img class="arrow-img"
+                                            src="img/MicrosoftTeams-image.png" alt=""></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-sear">
+                        <div class="bg-disc">
+                            <div class="searvice-icon">
+                                <img class="img-fluid" src="img/helmet.png" alt="">
+                            </div>
+                            <div class="searvice-disc">
+                                <h3>General Contracting</h3>
+                                <p>Offering both design and construct services under one contract, stream the process
+                                    and potentially.</p>
+                                <a href="#" class="read-btn">Read More <span><img class="arrow-img"
+                                            src="img/MicrosoftTeams-image.png" alt=""></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-sear">
+                        <div class="bg-disc">
+                            <div class="searvice-icon">
+                                <img class="img-fluid" src="img/helmet.png" alt="">
+                            </div>
+                            <div class="searvice-disc">
+                                <h3>General Contracting</h3>
+                                <p>Offering both design and construct services under one contract, stream the process
+                                    and potentially.</p>
+                                <a href="#" class="read-btn">Read More <span><img class="arrow-img"
+                                            src="img/MicrosoftTeams-image.png" alt=""></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-sear">
+                        <div class="bg-disc">
+                            <div class="searvice-icon">
+                                <img class="img-fluid" src="img/helmet.png" alt="">
+                            </div>
+                            <div class="searvice-disc">
+                                <h3>General Contracting</h3>
+                                <p>Offering both design and construct services under one contract, stream the process
+                                    and potentially.</p>
+                                <a href="#" class="read-btn">Read More <span><img class="arrow-img"
+                                            src="img/MicrosoftTeams-image.png" alt=""></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-sear">
+                        <div class="bg-disc">
+                            <div class="searvice-icon">
+                                <img class="img-fluid" src="img/helmet.png" alt="">
+                            </div>
+                            <div class="searvice-disc">
+                                <h3>General Contracting</h3>
+                                <p>Offering both design and construct services under one contract, stream the process
+                                    and potentially.</p>
+                                <a href="#" class="read-btn">Read More <span><img class="arrow-img"
+                                            src="img/MicrosoftTeams-image.png" alt=""></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-sear">
+                        <div class="bg-disc">
+                            <div class="searvice-icon">
+                                <img class="img-fluid" src="img/helmet.png" alt="">
+                            </div>
+                            <div class="searvice-disc">
+                                <h3>General Contracting</h3>
+                                <p>Offering both design and construct services under one contract, stream the process
+                                    and potentially.</p>
+                                <a href="#" class="read-btn">Read More <span><img class="arrow-img"
+                                            src="img/MicrosoftTeams-image.png" alt=""></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    </section>
+
+
+
+    <section class="recent-work">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="tab-box-left our-box pad-left">
+                    <span>RECENT WORK</span>
+                    <h2>Explore Large-Scale Projects
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row ">
+
+                <div class="projects-slider">
+
+                    <div class="item">
+                        <!-- You can put an image or text inside each slide div -->
+                        <img class="img-fluid" src="img/img-1.jpg">
+                        <div class="slider-btn">
+                            <a href="#" class="s-btn">
+                                <span class="R-Detail-btn">Read Details</span>
+                                <span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <img class="img-fluid" src="img/img-2.jpg">
+
+                        <div class="slider-btn">
+                            <a href="#" class="s-btn">
+                                <span class="R-Detail-btn">Read Details</span>
+                                <span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-fluid" src="img/img-3.jpg">
+                        <div class="slider-btn">
+                            <a href="#" class="s-btn">
+                                <span class="R-Detail-btn">Read Details</span>
+                                <span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-fluid" src="img/img-4.jpg">
+                        <div class="slider-btn">
+                            <a href="#" class="s-btn">
+                                <span class="R-Detail-btn">Read Details</span>
+                                <span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-fluid" src="img/img-5.jpg">
+                        <div class="slider-btn">
+                            <a href="#" class="s-btn">
+                                <span class="R-Detail-btn">Read Details</span>
+                                <span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-fluid" src="img/img-6.jpg">
+                        <div class="slider-btn">
+                            <a href="#" class="s-btn">
+                                <span class="R-Detail-btn">Read Details</span>
+                                <span class="icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="OUR-SERVICES why-choose">
+        <div class="container-fluid">
+            <div class="row mob-gap">
+                <div class="col-md-12 col-lg-7">
+                    <div class="tab-box-left our-box">
+                        <span>WHY CHOOSE US</span>
+                        <h2>Construction Solutions For Industries <br>and Factory
+                        </h2>
+                    </div>
+
+                    <div class="why-choose-box">
+                        <div class="why-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="62" viewBox="0 0 60 62"
+                                fill="#fff">
+                                <path
+                                    d="M59.9964 28.3079C59.9731 27.8377 59.5714 27.4513 59.0983 27.4513H48.7252L50.4083 23.6125C50.5029 23.3969 50.5082 23.1427 50.4228 22.9233L49.561 20.7111C50.0407 20.535 50.5058 20.32 50.9509 20.0667L53.1115 21.4029C53.511 21.6257 53.8913 21.5723 54.2524 21.243L56.3415 18.9483C56.6369 18.6239 56.6558 18.1338 56.3862 17.7875L54.8348 15.7954C55.025 15.371 55.1822 14.9334 55.3054 14.4864L57.7829 13.9144C58.2086 13.8162 58.5025 13.4268 58.4804 12.9904L58.3244 9.90244C58.3024 9.46609 57.9706 9.10848 57.5373 9.05354L55.0147 8.73427C54.8472 8.30201 54.6466 7.88261 54.4146 7.47944L55.7571 5.34122C55.9905 4.96954 55.9224 4.48379 55.5957 4.19084L53.2859 2.11837C52.9628 1.82843 52.479 1.81004 52.1347 2.07438L50.12 3.62155C49.6895 3.43126 49.2459 3.27403 48.7926 3.15142L48.2195 0.696814C48.1202 0.272125 47.7301 -0.0231006 47.2961 0.0014214L44.1854 0.158531C43.7499 0.180528 43.3926 0.511095 43.3367 0.943477L43.014 3.4434C42.5753 3.61121 42.1498 3.8122 41.7409 4.04503L39.5803 2.70882C39.2111 2.48067 38.7316 2.54763 38.4394 2.8687L36.3503 5.16343C36.0549 5.48787 36.036 5.97795 36.3057 6.32426L37.857 8.3162C37.7092 8.64628 37.5832 8.98478 37.4756 9.32893L33.2529 7.47752C32.7289 7.30418 32.3331 7.45877 32.0652 7.94115L28.4809 16.1163V2.1114C28.4809 0.945761 26.6778 0.945761 26.6778 2.1114V6.06029C20.4988 6.3215 14.7998 9.58629 11.3786 14.8486C10.7644 15.7933 12.2231 16.8576 12.8903 15.8314C15.9789 11.0807 21.1104 8.12483 26.6778 7.8647V46.0341H21.1189C20.3605 46.0341 19.7436 45.4134 19.7436 44.6503V41.5592C19.7436 41.2275 19.5615 40.9227 19.2695 40.7654C13.5322 37.6756 10.0063 31.6998 10.0679 25.1698C10.084 23.4632 10.349 21.7753 10.8557 20.1529C11.2031 19.0403 9.482 18.5026 9.1346 19.6155C8.57529 21.4064 8.2827 23.2695 8.26503 25.1529C8.19892 32.1725 11.8926 38.612 17.9407 42.0891V44.6503C17.9407 46.0935 18.9028 47.315 20.2175 47.7058V51.9767C20.2175 54.7346 22.4613 56.9784 25.2191 56.9784H26.678V60.1678C26.678 61.3335 28.4811 61.3335 28.4811 60.1678V38.5895L37.6672 42.6171L37.4606 43.7947C37.1573 43.8977 36.8612 44.0195 36.574 44.1594L34.9552 43.0315C34.5969 42.7817 34.1109 42.8247 33.8021 43.134L32.0215 44.9162C31.7127 45.2252 31.67 45.7112 31.92 46.0694L33.0495 47.6872C32.9098 47.9746 32.7883 48.2707 32.6855 48.5742L30.7578 48.9144C30.3255 48.9907 30.0112 49.3671 30.0128 49.8058L30.0232 52.3343C30.025 52.7684 30.3358 53.1396 30.7628 53.2176L32.7022 53.5716C32.8081 53.8791 32.9332 54.1793 33.0768 54.4704L31.9632 56.0771C31.7148 56.4354 31.7585 56.9203 32.067 57.2284L33.8622 59.022C34.1705 59.3301 34.6553 59.3735 35.0137 59.1247L36.6194 58.0098C36.9106 58.153 37.2109 58.2778 37.5184 58.3835L37.8742 60.3226C37.9526 60.7496 38.324 61.0601 38.7581 61.0614L41.2866 61.0694H41.2895C41.727 61.0694 42.1017 60.755 42.1775 60.3237L42.516 58.3956C42.8194 58.2926 43.1153 58.1708 43.4025 58.0309L45.0212 59.1588C45.3796 59.4087 45.8656 59.3657 46.1743 59.0563L47.9549 57.2741C48.2637 56.965 48.3064 56.4791 48.0564 56.1208L46.9269 54.5031C47.0666 54.2157 47.1881 53.9196 47.2909 53.6161L49.2186 53.2759C49.6508 53.1996 49.9652 52.8232 49.9636 52.3845L49.9533 49.8559C49.9515 49.4219 49.6407 49.0507 49.2137 48.9727L47.3907 48.6399C49.9709 48.6284 52.5914 48.628 55.1393 48.628C55.4376 48.684 55.7131 48.5949 55.9658 48.3603L59.7551 44.3311C59.9123 44.1638 59.9999 43.943 59.9999 43.7134V28.3529C59.9998 28.3377 59.9972 28.3231 59.9964 28.3079ZM57.0127 29.2544L54.9585 31.4387H42.0238L44.0782 29.2544H57.0127ZM46.8388 13.7231C46.7538 13.5048 46.5756 13.3187 46.3607 13.2247L42.939 11.7244C43.1023 10.0813 44.4615 8.75447 46.1747 8.66792C48.0625 8.5762 49.6707 10.0152 49.7652 11.8832C49.8426 13.4146 48.8692 14.7917 47.4413 15.2698L46.8388 13.7231ZM45.9464 16.4001L46.9202 18.8997L47.9502 21.544L44.3724 19.9637L45.9464 16.4001ZM39.6246 7.65134L38.195 5.81567L39.2687 4.63621L41.2635 5.86988C41.5613 6.05392 41.9387 6.04911 42.2318 5.85726C42.8132 5.47621 43.4435 5.1787 44.1047 4.9729C44.4412 4.86821 44.6857 4.57695 44.7309 4.22751L45.0286 1.92135L46.6348 1.84021L47.1635 4.10454C47.2437 4.44772 47.5164 4.71278 47.8618 4.7831C48.5401 4.92098 49.197 5.15357 49.8143 5.47416C50.125 5.63548 50.5012 5.60218 50.7788 5.38906L52.639 3.96053L53.8261 5.02568L52.5889 6.99633C52.4004 7.29649 52.4053 7.67935 52.6014 7.97457C52.9841 8.55096 53.2828 9.17519 53.4892 9.83007C53.595 10.1659 53.8866 10.4093 54.2359 10.4536L56.5617 10.748L56.6415 12.3278L54.3572 12.8552C54.0141 12.9343 53.7486 13.2061 53.6772 13.5507C53.538 14.2231 53.3037 14.8743 52.981 15.4861C52.8157 15.7996 52.8493 16.1809 53.067 16.4606L54.4968 18.2964L53.423 19.4759L51.4282 18.2422C51.1304 18.0582 50.753 18.063 50.46 18.2547C49.9726 18.5741 49.451 18.8337 48.9061 19.0308L48.0957 16.9504C50.2334 16.1944 51.6829 14.1093 51.5657 11.7922C51.4211 8.93117 48.962 6.72154 46.0834 6.86723C43.669 6.98924 41.7156 8.73031 41.2338 10.977L39.1376 10.0579C39.2772 9.5637 39.4691 9.08395 39.7106 8.62597C39.8761 8.31235 39.8424 7.93106 39.6246 7.65134ZM25.2189 55.1754C23.4552 55.1754 22.0203 53.7405 22.0203 51.9769V47.8372H26.6777V55.1754H25.2189ZM28.4809 20.6067L33.3546 9.49097L44.8088 14.5131L42.3587 20.0597C42.1838 20.5832 42.3373 20.9794 42.8191 21.2487L48.3958 23.7121L46.7563 27.4514H43.6883C43.4396 27.4514 43.202 27.5541 43.0316 27.7353L39.2424 31.7644C39.0565 31.9619 38.9589 32.4888 38.982 32.7728V41.122L38.7454 41.1213L28.4809 36.6209V20.6067ZM48.1573 51.6323L46.4288 51.9374C46.0797 51.9991 45.7991 52.2595 45.7118 52.6029C45.5766 53.1341 45.3687 53.6412 45.0937 54.1103C44.9156 54.414 44.9307 54.7936 45.1322 55.0823L46.1456 56.5339L45.4323 57.2478L43.9797 56.2356C43.6908 56.0343 43.3111 56.0197 43.0076 56.198C42.539 56.4734 42.032 56.6817 41.5009 56.8174C41.1575 56.9051 40.8974 57.1859 40.8361 57.5351L40.5326 59.264L39.5122 59.2607L39.1924 57.5175C39.1291 57.1731 38.8723 56.8964 38.5335 56.8079C38.0002 56.6686 37.4904 56.4565 37.0181 56.1775C36.7148 55.9982 36.3348 56.0122 36.0453 56.2132L34.6035 57.2141L33.8739 56.4853L34.8736 55.0427C35.0742 54.7531 35.0879 54.3732 34.9084 54.0699C34.6289 53.5976 34.4162 53.0879 34.2764 52.5548C34.1876 52.2162 33.9108 51.9595 33.5663 51.8966L31.8228 51.5782L31.8186 50.5581L33.547 50.253C33.8961 50.1913 34.1767 49.9309 34.264 49.5875C34.3992 49.0563 34.6071 48.5492 34.8821 48.0801C35.0602 47.7764 35.0451 47.3968 34.8437 47.1081L33.8302 45.6565L34.5435 44.9426L35.996 45.9548C36.2847 46.1562 36.6644 46.1708 36.968 45.9924C37.437 45.717 37.9439 45.5086 38.4749 45.373C38.8183 45.2853 39.0784 45.0045 39.1397 44.6553L39.4431 42.9264L40.4634 42.9297L40.7833 44.6729C40.8465 45.0173 41.1034 45.294 41.4422 45.3825C41.9756 45.5218 42.4854 45.7339 42.9576 46.0129C43.261 46.1923 43.6411 46.1784 43.9304 45.9772L45.3721 44.9763L46.1017 45.7051L45.1019 47.1477C44.9012 47.4373 44.8876 47.8172 45.0671 48.1205C45.3466 48.5928 45.5592 49.1025 45.699 49.6356C45.7878 49.9742 46.0647 50.2309 46.4092 50.2938L48.1528 50.6122L48.1573 51.6323ZM56.2131 45.4656C56.2127 44.5779 56.2106 42.3848 56.2106 42.3848C56.2106 41.2191 54.4075 41.2191 54.4075 42.3848V46.8251C52.1314 46.8252 49.8075 46.8269 47.5117 46.8368L48.0131 46.1133C48.2614 45.755 48.2178 45.2701 47.9094 44.962L46.1141 43.1684C45.8056 42.8603 45.3208 42.8169 44.9626 43.0657L43.357 44.1806C43.0658 44.0374 42.7655 43.9126 42.458 43.8069L42.1022 41.8678C41.9886 41.2487 41.335 41.0486 40.7976 41.1275C40.7828 40.1262 40.8914 34.8904 40.7976 33.2836H54.4076V37.6777C54.4076 38.8434 56.2107 38.8434 56.2107 37.6777C56.2107 37.6777 56.2134 34.288 56.2134 32.7365L58.1968 30.6277V43.3565L56.2131 45.4656Z"
+                                    fill="#fff"></path>
+                                <path
+                                    d="M39.985 47C39.9806 46.9998 39.9761 46.9998 39.9717 46.9998C38.8834 46.9998 37.8622 47.4225 37.0948 48.1905C36.3242 48.9617 35.9023 49.9885 35.9068 51.0818C35.9112 52.1727 36.3399 53.1992 37.1138 53.9724C37.8877 54.7456 38.9145 55.1733 40.0053 55.1767H40.0187C41.1069 55.1767 42.1283 54.7541 42.8957 53.9861C43.6662 53.2149 44.0881 52.1881 44.0837 51.0948C44.0792 50.004 43.6506 48.9775 42.8768 48.2043C42.1027 47.4311 41.0758 47.0035 39.985 47ZM41.6199 52.7117C41.1915 53.1405 40.6196 53.3803 40.0108 53.3737C39.3992 53.3717 38.8229 53.1313 38.3881 52.6969C37.9532 52.2624 37.7123 51.6862 37.7097 51.0746C37.7072 50.4654 37.9419 49.8938 38.3703 49.4649C38.7986 49.0361 39.3728 48.799 39.9792 48.8029C40.5908 48.805 41.1672 49.0453 41.6021 49.4798C42.037 49.9142 42.2779 50.4904 42.2803 51.102C42.2829 51.7113 42.0483 52.2828 41.6199 52.7117Z"
+                                    fill="#EA5501"></path>
+                                <path
+                                    d="M11.6896 10.377C12.4465 10.377 12.8624 9.37328 12.3272 8.838L9.25306 5.76337C8.42893 4.93899 7.15378 6.21402 7.97804 7.03815L11.0521 10.1129C11.2282 10.289 11.459 10.377 11.6896 10.377Z"
+                                    fill="#EA5501"></path>
+                                <path
+                                    d="M5.2216 24.5806H0.874229C-0.29141 24.5806 -0.29141 26.3837 0.874229 26.3837H5.22172C6.38736 26.3837 6.38736 24.5806 5.2216 24.5806Z"
+                                    fill="#EA5501"></path>
+                                <path
+                                    d="M11.327 40.7375L8.25294 43.8121C7.42869 44.6364 8.70383 45.9114 9.52797 45.0869L12.602 42.0123C13.4263 41.188 12.1511 39.9131 11.327 40.7375Z"
+                                    fill="#EA5501"></path>
+                            </svg>
+                        </div>
+                        <div class="why-disc">
+                            <h4>We're Certified Company</h4>
+                            <p>All the Lorem Ipsum generators on the Internet tend.</p>
+                        </div>
+                    </div>
+
+                    <div class="why-choose-box">
+                        <div class="why-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="69" viewBox="0 0 60 69"
+                                fill="none">
+                                <path
+                                    d="M58.2461 47.1707C58.2431 47.1707 58.2401 47.1696 58.2361 47.1696L56.2 46.8572C55.9581 46.073 55.6456 45.3261 55.2656 44.6245L56.4812 42.9765C57.094 42.157 57.0124 40.9959 56.2887 40.2742L54.557 38.5516C53.8484 37.8047 52.6852 37.7089 51.8526 38.3278L50.1935 39.5494C49.4638 39.1594 48.7138 38.8499 47.9538 38.6221L47.6454 36.5981C47.5033 35.5861 46.6203 34.8231 45.5912 34.8231H43.1338C42.1218 34.8231 41.2569 35.5539 41.0705 36.5941L40.7751 38.6262C40.4506 38.7249 40.1462 38.8348 39.8549 38.9588C39.7107 39.0021 39.5787 39.0545 39.5031 39.0959C39.1805 39.2239 38.857 39.3741 38.5364 39.5454L36.8763 38.3228C36.0448 37.719 34.8836 37.8147 34.1881 38.5314L32.4554 40.2651C32.0092 40.6978 31.8059 41.2952 31.8482 41.8822C31.3836 41.8203 30.9172 41.7769 30.4496 41.7505V37.6273C33.8895 34.9974 36.0686 30.4769 36.3046 25.5176H37.6323C39.3448 25.5176 40.7388 24.1236 40.7388 22.411V21.3638C40.7388 19.7173 39.4465 18.3794 37.8252 18.2777C37.4136 12.4756 33.4955 7.53717 27.9226 5.83711V3.01885C27.9226 1.3547 26.5679 0 24.9037 0H22.6782C21.014 0 19.6593 1.3547 19.6593 3.01885V5.83711C14.0864 7.53717 10.1683 12.4756 9.7567 18.2777C8.13539 18.3794 6.84306 19.7173 6.84306 21.3638V22.411C6.84306 24.1236 8.23707 25.5176 9.9496 25.5176H11.2558C11.4923 30.4892 13.6997 35.0326 17.1293 37.6386V41.7691C7.59783 42.3011 0 50.2051 0 59.873V63.7234C0 66.1476 1.97258 68.1202 4.39774 68.1202H12.7962C12.7997 68.1202 12.8026 68.1222 12.8062 68.1222C12.8097 68.1222 12.8127 68.1202 12.8162 68.1202H35.8725C35.876 68.1202 35.8789 68.1222 35.8825 68.1222C35.886 68.1222 35.889 68.1202 35.8925 68.1202H43.1751C45.0677 68.1202 46.7598 66.8785 47.3372 65.0859C47.4802 64.8556 47.5945 64.6028 47.6434 64.3131L47.9548 62.278C48.731 62.0401 49.4769 61.7327 50.1834 61.3577L51.8627 62.5905C52.6973 63.1882 53.8565 63.0864 54.5328 62.3717L56.3028 60.6219C56.8652 60.0403 57.0436 59.2098 56.7695 58.483C56.712 58.2925 56.6163 58.105 56.4852 57.9286L55.2646 56.2736C55.6456 55.565 55.9591 54.8181 56.199 54.0419L58.226 53.7325C59.238 53.5873 60 52.7084 60 51.6883V49.2219C60 48.2159 59.246 47.3339 58.2461 47.1707ZM46.7992 54.6562C45.9481 51.7904 44.3933 49.1761 42.2548 47.0376C42.0801 46.8622 41.8968 46.6942 41.7138 46.5265C42.5001 45.9881 43.4234 45.692 44.4038 45.692C47.0557 45.692 49.2138 47.849 49.2138 50.501C49.2138 52.2287 48.2549 53.8054 46.7992 54.6562ZM20.1402 39.3323C20.2228 39.3623 20.3042 39.3948 20.3874 39.4226C21.4808 39.7951 22.6188 39.9919 23.7698 39.9919C24.9287 39.9919 26.0768 39.7921 27.1821 39.4147C27.2653 39.3867 27.3472 39.3545 27.4299 39.3244C27.6841 39.2307 27.9353 39.1273 28.184 39.0143C28.2504 38.9842 28.3194 38.9631 28.3852 38.9316V42.3113L23.7966 46.4546L19.1936 42.2519V38.9447C19.2661 38.9793 19.3422 39.0026 19.4153 39.0354C19.6544 39.1434 19.8959 39.2424 20.1402 39.3323ZM19.6593 8.02263V11.522C19.6593 12.0925 20.121 12.5542 20.6915 12.5542C21.262 12.5542 21.7236 12.0925 21.7236 11.522V6.62433V3.01885C21.7236 2.49269 22.152 2.06431 22.6782 2.06431H24.9037C25.4299 2.06431 25.8583 2.49269 25.8583 3.01885V6.62433C25.8583 6.79959 25.9144 6.95948 25.9933 7.10608V11.9806C25.9933 12.5512 26.455 13.0128 27.0255 13.0128C27.596 13.0128 28.0577 12.5512 28.0577 11.9806V8.07315C32.3629 9.69849 35.3667 13.6398 35.7585 18.2572H11.8234C12.2193 13.5924 15.2817 9.6159 19.6593 8.02263ZM8.90737 22.411V21.3638C8.90737 20.7892 9.37506 20.3225 9.9496 20.3225H37.6323C38.2068 20.3225 38.6745 20.7892 38.6745 21.3638V22.411C38.6745 22.9856 38.2068 23.4533 37.6323 23.4533H35.321H12.2306H9.9496C9.37506 23.4533 8.90737 22.9856 8.90737 22.411ZM13.3031 25.5176H34.2657C34.0278 30.0242 31.9917 34.0933 28.8318 36.2867C28.6067 36.4433 28.3687 36.5659 28.1353 36.7008C25.3844 38.2751 22.087 38.2657 19.3642 36.6654C19.1583 36.5426 18.9484 36.4357 18.7471 36.2947C15.5962 34.1256 13.542 30.0343 13.3031 25.5176ZM43.1751 66.0558H36.9146V56.0407C36.9146 55.4702 36.453 55.0086 35.8825 55.0086C35.312 55.0086 34.8503 55.4702 34.8503 56.0407V66.0558H13.8383V56.0407C13.8383 55.4702 13.3767 55.0086 12.8062 55.0086C12.2357 55.0086 11.774 55.4702 11.774 56.0407V66.0558H4.39774C3.11158 66.0558 2.06431 65.0096 2.06431 63.7234V59.873C2.06431 51.1322 9.06366 43.9978 17.809 43.7872L23.0934 48.613C23.291 48.7935 23.54 48.8832 23.7899 48.8832C24.0379 48.8832 24.2849 48.7945 24.4814 48.6171L24.5305 48.5728L29.8417 43.7879C31.0815 43.8202 32.3183 43.9936 33.5208 44.305C35.7061 44.8796 37.7119 45.8976 39.492 47.338C39.9476 47.6968 40.385 48.0859 40.7943 48.4961C42.9543 50.6562 44.4431 53.3616 45.1013 56.325C45.3644 57.4771 45.4974 58.6705 45.4974 59.873V63.7234C45.4974 63.9494 45.4672 64.1469 45.4135 64.3308C45.4068 64.3493 45.3992 64.3674 45.3936 64.3867C45.1104 65.3694 44.1982 66.0558 43.1751 66.0558ZM57.9357 49.2219L57.9236 51.6904L55.2293 52.1026C54.8191 52.1651 54.4854 52.4685 54.3846 52.8707C54.1216 53.9159 53.7083 54.9017 53.1549 55.8028C52.9342 56.1607 52.9533 56.6173 53.2033 56.956L54.8271 59.1594C54.8271 59.1584 54.7999 59.119 54.7818 59.0384C54.7959 59.0989 54.811 59.113 54.8352 59.1705L53.0753 60.9193L50.8668 59.2985C50.6854 59.1664 50.4707 59.0989 50.256 59.0989C50.0716 59.0989 49.8871 59.1483 49.7218 59.2481C49.0475 59.6553 48.3238 59.9869 47.5617 60.2369V59.873C47.5617 59.258 47.5214 58.6468 47.4597 58.0389C47.4406 57.8495 47.411 57.6635 47.386 57.4753C47.3535 57.2323 47.3329 56.9871 47.2906 56.7463C49.7097 55.6325 51.2781 53.2275 51.2781 50.501C51.2781 46.711 48.1947 43.6277 44.4038 43.6277C42.8203 43.6277 41.2841 44.183 40.0665 45.1759C39.901 45.0548 39.726 44.9515 39.5571 44.8365C39.377 44.7139 39.1979 44.5904 39.0141 44.4747C38.668 44.257 38.313 44.057 37.9542 43.8642C37.7955 43.779 37.6409 43.6859 37.4798 43.6056C36.9581 43.3454 36.4259 43.107 35.8799 42.8989C35.8109 42.8726 35.7385 42.8542 35.6691 42.8287C35.2514 42.6754 34.8306 42.5287 34.3998 42.406L33.9038 41.7357L35.6587 39.9889L37.8571 41.6087C38.1978 41.8607 38.6574 41.8778 39.0172 41.6521C39.4305 41.394 39.8498 41.1793 40.3447 40.9787C40.3911 40.9556 40.4304 40.9404 40.4697 40.9293C40.5191 40.9162 40.5675 40.8991 40.6149 40.8789C41.0059 40.7086 41.4384 40.5685 41.9363 40.4516C42.3486 40.3538 42.66 40.0141 42.7205 39.5948L43.1338 36.8874L45.6033 36.8975L46.0155 39.6019C46.079 40.0202 46.3915 40.3568 46.8037 40.4526C47.7996 40.6824 48.7844 41.0886 49.7319 41.6611C50.0907 41.8778 50.5433 41.8577 50.8779 41.6087L53.0793 39.9929L54.8241 41.7448L53.2033 43.9432C52.9523 44.2838 52.9342 44.7415 53.1569 45.1003C53.7053 45.9833 54.1175 46.968 54.3846 48.0284C54.4854 48.4306 54.8191 48.734 55.2293 48.7965L57.9236 49.2098L58.0798 48.1897L57.9357 49.2219Z"
+                                    fill="#fff"></path>
+                            </svg>
+                        </div>
+                        <div class="why-disc">
+                            <h4>We're Certified Company</h4>
+                            <p>All the Lorem Ipsum generators on the Internet tend.</p>
+                        </div>
+                    </div>
+                    <div class="why-choose-box">
+                        <div class="why-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
+                                fill="white">
+                                <path
+                                    d="M55.1859 4.3288H47.5171C47.0317 4.3288 46.6382 4.72231 46.6382 5.2077C46.6382 5.69309 47.0317 6.08661 47.5171 6.08661H55.1859C55.6713 6.08661 56.0648 5.69309 56.0648 5.2077C56.0648 4.72231 55.6714 4.3288 55.1859 4.3288Z"
+                                    fill="#fff"></path>
+                                <path
+                                    d="M43.1621 6.08661H44.0969C44.5823 6.08661 44.9758 5.69309 44.9758 5.2077C44.9758 4.72231 44.5823 4.3288 44.0969 4.3288H43.1621C42.6767 4.3288 42.2832 4.72231 42.2832 5.2077C42.2832 5.69309 42.6767 6.08661 43.1621 6.08661Z"
+                                    fill="#fff"></path>
+                                <path
+                                    d="M43.1621 10.2153H55.186C55.6714 10.2153 56.0649 9.82181 56.0649 9.33642C56.0649 8.85103 55.6714 8.45752 55.186 8.45752H43.1621C42.6767 8.45752 42.2832 8.85103 42.2832 9.33642C42.2832 9.82181 42.6767 10.2153 43.1621 10.2153Z"
+                                    fill="#fff"></path>
+                                <path
+                                    d="M46.3409 52.0062C46.3409 48.4954 45.1688 45.0511 43.0339 42.2683L43.1968 39.2677C43.3076 37.2251 41.6867 35.4971 39.6251 35.4971H30.0043C29.5617 35.1843 29.2932 34.6763 29.2932 34.1277V31.6736C30.7849 30.7089 31.8322 29.6088 32.6015 28.2996H34.3024C36.27 28.2996 37.8708 26.6988 37.8708 24.7311V18.1672C37.8708 17.0601 37.2304 16.0815 36.2726 15.6185V11.0119C36.2726 8.91469 34.5665 7.20845 32.4693 7.20845H32.3708C32.3108 7.20845 32.262 7.15958 32.262 7.09969C32.262 5.00251 30.5558 3.29626 28.4586 3.29626H19.1505C14.5302 3.29626 10.7712 7.05528 10.7712 11.6756V15.6184C9.8135 16.0814 9.17295 17.06 9.17295 18.1671V21.5053C9.17295 23.0672 10.4436 24.3378 12.0055 24.3378H13.1401C13.4338 26.8217 14.599 29.0902 16.424 30.6673C16.8522 31.0374 17.2951 31.368 17.7506 31.6633V34.1275C17.7506 34.6746 17.4811 35.1827 17.0365 35.497H7.41901C5.37339 35.497 3.7357 37.2091 3.84749 39.2676L4.01038 42.2682C1.87535 45.0511 0.703241 48.4954 0.703241 52.0062V55.3166C0.266249 55.8064 0 56.4515 0 57.1579C0 58.6846 1.24207 59.9265 2.76878 59.9265H44.2753C45.8021 59.9265 47.0441 58.6845 47.0441 57.1579C47.0441 56.4515 46.7779 55.8064 46.3409 55.3167V52.0062ZM44.5831 52.0062V54.4066C44.4819 54.3953 44.3794 54.3891 44.2753 54.3891H42.376L42.872 45.2497C43.9845 47.3158 44.5831 49.6435 44.5831 52.0062ZM36.0229 17.7381C36.0807 17.8703 36.1133 18.0153 36.1133 18.1673V21.5055C36.1133 22.0981 35.6311 22.5803 35.0385 22.5803H33.9933V19.267L34.535 19.0783C35.2051 18.8449 35.732 18.3527 36.0229 17.7381ZM30.155 27.9214H27.9493C27.5937 27.9214 27.3044 27.6322 27.3044 27.2766C27.3044 26.9211 27.5937 26.6319 27.9493 26.6319H30.155C30.5105 26.6319 30.7997 26.9211 30.7997 27.2766C30.7997 27.6322 30.5105 27.9214 30.155 27.9214ZM34.3026 26.5419H33.4142C33.6617 25.8362 33.8326 25.097 33.9227 24.3381H35.0385C35.4188 24.3381 35.7816 24.2622 36.1133 24.1257V24.7313C36.1133 25.7297 35.3009 26.5419 34.3026 26.5419ZM12.5292 11.6759C12.5292 8.02477 15.4997 5.05431 19.1507 5.05431H28.4588C29.5867 5.05431 30.5044 5.972 30.5044 7.09993C30.5044 8.12919 31.3419 8.96649 32.371 8.96649H32.4695C33.5975 8.96649 34.515 9.88418 34.515 11.0121V16.6328C34.515 16.9864 34.2906 17.3021 33.9567 17.4185L32.1097 18.0617C32.0353 18.0875 31.9585 18.0339 31.9585 17.9538L31.9619 14.4612C31.9726 11.9122 29.5858 9.68918 26.2417 10.7633C24.5599 11.3038 22.4785 11.3019 20.8023 10.7633C17.4929 9.69973 15.0715 11.8833 15.0821 14.4585L15.0862 17.954C15.0862 18.0347 15.0077 18.0878 14.9351 18.0617L13.0875 17.4184C12.7535 17.3021 12.5291 16.9863 12.5291 16.6326L12.5292 11.6759ZM10.931 21.5055V18.1672C10.931 18.0153 10.9636 17.8701 11.0213 17.738C11.3123 18.3527 11.8393 18.8449 12.5096 19.0783L13.0511 19.2669V22.5801H12.0058C11.4131 22.5803 10.931 22.098 10.931 21.5055ZM14.825 23.3229C14.7958 22.1674 14.8138 20.9409 14.8088 19.818C14.863 19.8227 14.9172 19.8254 14.9715 19.8254C16.0165 19.8254 16.8458 18.976 16.844 17.9515L16.8399 14.4537C16.834 13.0266 18.1141 11.7456 20.2645 12.4368C22.3026 13.0916 24.7481 13.0896 26.7795 12.4368C28.8283 11.7785 30.2104 12.9374 30.2041 14.4566L30.2007 17.9517C30.1993 19.0411 31.1304 19.9139 32.2353 19.818V23.394C32.2097 24.1536 32.0847 24.8949 31.8726 25.5999C31.4361 25.1527 30.8278 24.874 30.155 24.874H27.9493C26.6245 24.874 25.5466 25.9517 25.5466 27.2765C25.5466 28.6013 26.6245 29.6791 27.9493 29.6791H29.066C27.4426 30.9463 25.5965 31.607 23.5681 31.6406C19.1309 31.6051 14.9519 28.327 14.825 23.3229ZM19.5088 34.1278V32.5899C20.7792 33.116 22.1345 33.3885 23.5658 33.3986H23.572C23.5766 33.3986 23.5811 33.3986 23.5857 33.3985C24.9792 33.3768 26.2985 33.1068 27.5357 32.5971V34.1277C27.5357 34.6075 27.6362 35.0721 27.8211 35.4971H19.2223C19.4079 35.0719 19.5088 34.6073 19.5088 34.1278ZM4.1721 45.2497L4.31085 47.8068C4.33722 48.2916 4.75241 48.6644 5.23604 48.6368C5.72073 48.6106 6.09233 48.1963 6.06608 47.7116L5.60261 39.1726C5.54624 38.1338 6.37053 37.255 7.41901 37.255H39.6252C40.666 37.255 41.4984 38.126 41.4416 39.1726L40.6157 54.3892H26.8335C27.0015 53.3853 27.4536 52.441 28.15 51.6673L28.1752 51.6392C30.8356 48.6629 30.0393 44.0086 26.6006 42.0547C25.7182 41.5533 24.5975 42.1785 24.5975 43.2179V47.2057C24.5975 47.3886 24.4488 47.5372 24.266 47.5372H22.7782C22.5953 47.5372 22.4466 47.3884 22.4466 47.2057V43.2179C22.4466 42.1805 21.3277 41.5523 20.4436 42.0547C16.995 44.014 16.2149 48.67 18.8716 51.6421L18.8941 51.6673C19.5905 52.4409 20.0427 53.3852 20.2106 54.3891H6.42854L6.28757 51.7907C6.26132 51.306 5.84706 50.9339 5.36237 50.9607C4.87769 50.9869 4.50608 51.4012 4.53233 51.8859L4.66816 54.3891H2.76878C2.66472 54.3891 2.56218 54.3954 2.46105 54.4066V52.0062C2.46105 49.6436 3.05976 47.3158 4.1721 45.2497ZM21.9866 54.3891C21.8067 52.949 21.1893 51.5895 20.2007 50.4913L20.1795 50.4675C18.4814 48.5679 18.7088 45.6304 20.6889 44.0103V47.2056C20.6889 48.3577 21.6262 49.2948 22.7783 49.2948H24.2661C25.4182 49.2948 26.3554 48.3576 26.3554 47.2056V44.0103C28.3224 45.6196 28.5744 48.555 26.8626 50.47L26.8436 50.4912C25.8549 51.5895 25.2376 52.949 25.0577 54.3891H21.9866ZM44.2753 58.1689H2.76878C2.21132 58.1689 1.75781 57.7153 1.75781 57.158C1.75781 56.6007 2.21132 56.147 2.76878 56.147H44.2753C44.8328 56.147 45.2863 56.6005 45.2863 57.158C45.2863 57.7155 44.8328 58.1689 44.2753 58.1689Z"
+                                    fill="#fff"></path>
+                                <path
+                                    d="M59.1209 6.01487C59.6063 6.01487 59.9998 5.62136 59.9998 5.13597V3.43488C59.9998 1.5409 58.4589 0 56.5648 0H41.7827C39.8886 0 38.3477 1.5409 38.3477 3.43488V10.828C38.3477 12.7221 39.8886 14.263 41.7827 14.263C42.1211 14.263 42.3965 14.5384 42.3965 14.8768V19.4489C42.3965 20.1092 42.824 20.6712 43.4604 20.8474C44.1006 21.0246 44.7545 20.7581 45.0921 20.1951L48.4706 14.5611C48.5809 14.3772 48.7827 14.263 48.9972 14.263H56.5649C58.459 14.263 59.9999 12.7221 59.9999 10.828V9.24502C59.9999 8.75963 59.6064 8.36612 59.121 8.36612C58.6356 8.36612 58.2421 8.75963 58.2421 9.24502V10.828C58.2421 11.7528 57.4897 12.5052 56.5649 12.5052H48.9971C48.1685 12.5052 47.3891 12.9466 46.963 13.6571L44.1542 18.3411V14.8768C44.1542 13.5691 43.0902 12.5052 41.7825 12.5052C40.8577 12.5052 40.1054 11.7528 40.1054 10.828V3.43488C40.1054 2.51015 40.8577 1.75781 41.7825 1.75781H56.5648C57.4896 1.75781 58.242 2.51015 58.242 3.43488V5.13597C58.242 5.62136 58.6355 6.01487 59.1209 6.01487Z"
+                                    fill="#fff"></path>
+                            </svg>
+                        </div>
+                        <div class="why-disc">
+                            <h4>Offer 24/7 Quick Support</h4>
+                            <p>All the Lorem Ipsum generators on the Internet tend.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="why-choose-box range-box">
+
+                        <div class="range-text">Providing Quality</div>
+
+
+                        <div class="range-parsent">95%</div>
+                    </div>
+                    <div class="range-line"></div>
+
+                </div>
+                <div class="col-md-12 col-lg-5 posi">
+                    <div class="why-choose-img">
+                        <img class="img-fluid phone-img" src="img/phone-img.jpg" alt="">
+
+                    </div>
+                    <div class="video-img">
+                        <img src="img/video-img.jpg" alt="">
+                        <!-- <div class="vedio-icon">
+                        <svg fill="#fff" aria-hidden="true" class="e-font-icon-svg e-fas-play" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg>
+                    </div> -->
+                        <a id="play-video" class="video-play-button" href="#">
+                            <span></span>
+                        </a>
+
+                        <div id="video-overlay" class="video-overlay">
+                            <svg fill="#fff" aria-hidden="true" class="e-font-icon-svg e-fas-play" viewBox="0 0 448 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="QUESTION bg-white">
+        <div class="container-fluid">
+            <div class="row mob-gap">
+                <div class="col-md-12 col-lg-6">
+                    <div class="ouestion-img">
+                        <img class="img-fluid" src="img/faqs.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="tab-box-left our-box">
+                        <span>QUESTION</span>
+                        <h2>Do You Have Questions For Our Construction
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+
+                    <div class="accordion-box">
+                        <div class="accordion">
+                            <div class="accordion__header is-active">
+                                <h2>01. Can i use green energy in my home or business?</h2>
+                                <span class="accordion__toggle"></span>
+                            </div>
+                            <div class="accordion__body is-active">
+                                <p>Randomised words which don’t look even slightly believable. If you are going passage
+                                    of you need sure there anything.</p>
+                            </div>
+                            <div class="accordion__header">
+                                <h2>02. How do i get started with green energy?</h2>
+                                <span class="accordion__toggle"></span>
+                            </div>
+                            <div class="accordion__body">
+                                <p>Randomised words which don’t look even slightly believable. If you are going passage
+                                    of you need sure there anything.</p>
+
+                            </div>
+                            <div class="accordion__header">
+                                <h2>03. Green energy reliable during bad weather?</h2>
+                                <span class="accordion__toggle"></span>
+                            </div>
+                            <div class="accordion__body">
+                                <p>Randomised words which don’t look even slightly believable. If you are going passage
+                                    of you need sure there anything.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="ENGINEER expert_engeenier">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="tab-box-left our-box text-center">
+                    <span>ENGINEER</span>
+                    <h2>Best Construction Experts
+                    </h2>
+
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-md-12 col-lg-4">
+                    <div class="eng-box">
+                        <div class="engineer-img">
+                            <img src="img/engineer-1.jpg" alt="">
+                        </div>
+                        <div class="social-icon">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="engineer-disc">
+                        <h4>Penelopa Miller</h4>
+                        <span>CEO of Industrie</span>
+                    </div>
+
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="eng-box">
+                        <div class="engineer-img">
+                            <img src="img/engineer-2.jpg" alt="">
+                        </div>
+                        <div class="social-icon">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="engineer-disc">
+                        <h4>Penelopa Miller</h4>
+                        <span>CEO of Industrie</span>
+                    </div>
+
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="eng-box">
+                        <div class="engineer-img">
+                            <img src="img/engineer-3.jpg" alt="">
+                        </div>
+                        <div class="social-icon">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="engineer-disc">
+                        <h4>Penelopa Miller</h4>
+                        <span>CEO of Industrie</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="textmonial">
+        <div class="container-fluid">
+            <div class="row mob-gap align-items-center">
+                <div class="col-md-12 col-lg-9">
+                    <div class="tab-box-left our-box">
+                        <span>TESTIMONIALS</span>
+                        <h2>What People Say About Industrie Company
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-3 text-end mob-start">
+                    <div class="btn-box2 btn-4">
+                        <a href="#">More Reviews <span><img class="arrow-img" src="img/MicrosoftTeams-image.png"
+                                    alt=""></span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="textmonials-boxs">
+
+                    <div class="col-md-12 col-lg-4 px-2">
+                        <div class="textmonials-box">
+                            <div class="box-textmonial">
+                                <div class="text-icon">
+                                    <img src="img/textmonials-img.jpg" alt="">
+                                </div>
+                                <div class="text-disc">
+                                    <h4>Joshua Sendu</h4>
+                                    <span>Engineer</span>
+                                </div>
+                            </div>
+
+                            <div class="text-disc-p">
+                                <p>
+                                    More-or-less normal distribution of letters, as opposed to using content making it
+                                    look
+                                    like readable english. </p>
+                            </div>
+                            <div class="star-main">
+                                <div class="star-box">
+                                    <ul>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="qusition-img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="43" viewBox="0 0 60 43"
+                                        fill="none">
+                                        <path
+                                            d="M57.3913 0H33.913C32.4746 0 31.3043 1.14482 31.3043 2.55199V24.2439C31.3043 25.6511 32.4746 26.7959 33.913 26.7959H45V42.1077C45 42.7082 45.805 42.9717 46.1739 42.4907L59.8696 24.6267C59.9542 24.5163 60 24.382 60 24.2439V2.55199C60 1.14482 58.8299 0 57.3913 0ZM58.6957 24.0312L46.3043 40.1939V26.1579C46.3043 25.8055 46.0124 25.5199 45.6522 25.5199H33.913C33.1938 25.5199 32.6087 24.9475 32.6087 24.2439V2.55199C32.6087 1.84841 33.1938 1.276 33.913 1.276H57.3913C58.1105 1.276 58.6957 1.84841 58.6957 2.55199V24.0312ZM26.087 0H2.6087C1.17026 0 0 1.14482 0 2.55199V24.2439C0 25.6511 1.17026 26.7959 2.6087 26.7959H13.6957V42.1079C13.6957 42.7049 14.5004 42.9721 14.8696 42.4907L28.5652 24.6267C28.6499 24.5163 28.6957 24.382 28.6957 24.2439V2.55199C28.6957 1.14482 27.5254 0 26.087 0ZM27.3913 24.0312L15 40.1939V26.1579C15 25.8055 14.708 25.5199 14.3478 25.5199H2.6087C1.88948 25.5199 1.30435 24.9475 1.30435 24.2439V2.55199C1.30435 1.84841 1.88948 1.276 2.6087 1.276H26.087C26.8062 1.276 27.3913 1.84841 27.3913 2.55199V24.0312Z"
+                                            fill="#DDDDDD9C"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 px-2">
+                        <div class="textmonials-box">
+                            <div class="box-textmonial">
+                                <div class="text-icon">
+                                    <img src="img/textmonials2-img.jpg" alt="">
+                                </div>
+                                <div class="text-disc">
+                                    <h4>Bm Ashik Toren</h4>
+                                    <span>Ceo</span>
+                                </div>
+                            </div>
+
+                            <div class="text-disc-p">
+                                <p>
+                                    At the heart of the global landscape, the industry stands as a multidimensional
+                                    force of progress driving. </p>
+                            </div>
+                            <div class="star-main">
+                                <div class="star-box">
+                                    <ul>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="qusition-img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="43" viewBox="0 0 60 43"
+                                        fill="none">
+                                        <path
+                                            d="M57.3913 0H33.913C32.4746 0 31.3043 1.14482 31.3043 2.55199V24.2439C31.3043 25.6511 32.4746 26.7959 33.913 26.7959H45V42.1077C45 42.7082 45.805 42.9717 46.1739 42.4907L59.8696 24.6267C59.9542 24.5163 60 24.382 60 24.2439V2.55199C60 1.14482 58.8299 0 57.3913 0ZM58.6957 24.0312L46.3043 40.1939V26.1579C46.3043 25.8055 46.0124 25.5199 45.6522 25.5199H33.913C33.1938 25.5199 32.6087 24.9475 32.6087 24.2439V2.55199C32.6087 1.84841 33.1938 1.276 33.913 1.276H57.3913C58.1105 1.276 58.6957 1.84841 58.6957 2.55199V24.0312ZM26.087 0H2.6087C1.17026 0 0 1.14482 0 2.55199V24.2439C0 25.6511 1.17026 26.7959 2.6087 26.7959H13.6957V42.1079C13.6957 42.7049 14.5004 42.9721 14.8696 42.4907L28.5652 24.6267C28.6499 24.5163 28.6957 24.382 28.6957 24.2439V2.55199C28.6957 1.14482 27.5254 0 26.087 0ZM27.3913 24.0312L15 40.1939V26.1579C15 25.8055 14.708 25.5199 14.3478 25.5199H2.6087C1.88948 25.5199 1.30435 24.9475 1.30435 24.2439V2.55199C1.30435 1.84841 1.88948 1.276 2.6087 1.276H26.087C26.8062 1.276 27.3913 1.84841 27.3913 2.55199V24.0312Z"
+                                            fill="#DDDDDD9C"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 px-2">
+                        <div class="textmonials-box">
+                            <div class="box-textmonial">
+                                <div class="text-icon">
+                                    <img src="img/image.png" alt="">
+                                </div>
+                                <div class="text-disc">
+                                    <h4>Penelopa Miller</h4>
+                                    <span>Team Manager</span>
+                                </div>
+                            </div>
+
+                            <div class="text-disc-p">
+                                <p>
+                                    Industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                    galley of type. </p>
+                            </div>
+                            <div class="star-main">
+                                <div class="star-box">
+                                    <ul>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="qusition-img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="43" viewBox="0 0 60 43"
+                                        fill="none">
+                                        <path
+                                            d="M57.3913 0H33.913C32.4746 0 31.3043 1.14482 31.3043 2.55199V24.2439C31.3043 25.6511 32.4746 26.7959 33.913 26.7959H45V42.1077C45 42.7082 45.805 42.9717 46.1739 42.4907L59.8696 24.6267C59.9542 24.5163 60 24.382 60 24.2439V2.55199C60 1.14482 58.8299 0 57.3913 0ZM58.6957 24.0312L46.3043 40.1939V26.1579C46.3043 25.8055 46.0124 25.5199 45.6522 25.5199H33.913C33.1938 25.5199 32.6087 24.9475 32.6087 24.2439V2.55199C32.6087 1.84841 33.1938 1.276 33.913 1.276H57.3913C58.1105 1.276 58.6957 1.84841 58.6957 2.55199V24.0312ZM26.087 0H2.6087C1.17026 0 0 1.14482 0 2.55199V24.2439C0 25.6511 1.17026 26.7959 2.6087 26.7959H13.6957V42.1079C13.6957 42.7049 14.5004 42.9721 14.8696 42.4907L28.5652 24.6267C28.6499 24.5163 28.6957 24.382 28.6957 24.2439V2.55199C28.6957 1.14482 27.5254 0 26.087 0ZM27.3913 24.0312L15 40.1939V26.1579C15 25.8055 14.708 25.5199 14.3478 25.5199H2.6087C1.88948 25.5199 1.30435 24.9475 1.30435 24.2439V2.55199C1.30435 1.84841 1.88948 1.276 2.6087 1.276H26.087C26.8062 1.276 27.3913 1.84841 27.3913 2.55199V24.0312Z"
+                                            fill="#DDDDDD9C"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 px-2">
+                        <div class="textmonials-box">
+                            <div class="box-textmonial">
+                                <div class="text-icon">
+                                    <img src="img/textmonials-img.jpg" alt="">
+                                </div>
+                                <div class="text-disc">
+                                    <h4>Joshua Sendu</h4>
+                                    <span>Engineer</span>
+                                </div>
+                            </div>
+
+                            <div class="text-disc-p">
+                                <p>
+                                    More-or-less normal distribution of letters, as opposed to using content making it
+                                    look
+                                    like readable english. </p>
+                            </div>
+                            <div class="star-main">
+                                <div class="star-box">
+                                    <ul>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="qusition-img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="43" viewBox="0 0 60 43"
+                                        fill="none">
+                                        <path
+                                            d="M57.3913 0H33.913C32.4746 0 31.3043 1.14482 31.3043 2.55199V24.2439C31.3043 25.6511 32.4746 26.7959 33.913 26.7959H45V42.1077C45 42.7082 45.805 42.9717 46.1739 42.4907L59.8696 24.6267C59.9542 24.5163 60 24.382 60 24.2439V2.55199C60 1.14482 58.8299 0 57.3913 0ZM58.6957 24.0312L46.3043 40.1939V26.1579C46.3043 25.8055 46.0124 25.5199 45.6522 25.5199H33.913C33.1938 25.5199 32.6087 24.9475 32.6087 24.2439V2.55199C32.6087 1.84841 33.1938 1.276 33.913 1.276H57.3913C58.1105 1.276 58.6957 1.84841 58.6957 2.55199V24.0312ZM26.087 0H2.6087C1.17026 0 0 1.14482 0 2.55199V24.2439C0 25.6511 1.17026 26.7959 2.6087 26.7959H13.6957V42.1079C13.6957 42.7049 14.5004 42.9721 14.8696 42.4907L28.5652 24.6267C28.6499 24.5163 28.6957 24.382 28.6957 24.2439V2.55199C28.6957 1.14482 27.5254 0 26.087 0ZM27.3913 24.0312L15 40.1939V26.1579C15 25.8055 14.708 25.5199 14.3478 25.5199H2.6087C1.88948 25.5199 1.30435 24.9475 1.30435 24.2439V2.55199C1.30435 1.84841 1.88948 1.276 2.6087 1.276H26.087C26.8062 1.276 27.3913 1.84841 27.3913 2.55199V24.0312Z"
+                                            fill="#DDDDDD9C"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 px-2">
+                        <div class="textmonials-box">
+                            <div class="box-textmonial">
+                                <div class="text-icon">
+                                    <img src="img/textmonials-img.jpg" alt="">
+                                </div>
+                                <div class="text-disc">
+                                    <h4>Joshua Sendu</h4>
+                                    <span>Engineer</span>
+                                </div>
+                            </div>
+
+                            <div class="text-disc-p">
+                                <p>
+                                    More-or-less normal distribution of letters, as opposed to using content making it
+                                    look
+                                    like readable english. </p>
+                            </div>
+                            <div class="star-main">
+                                <div class="star-box">
+                                    <ul>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="qusition-img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="43" viewBox="0 0 60 43"
+                                        fill="none">
+                                        <path
+                                            d="M57.3913 0H33.913C32.4746 0 31.3043 1.14482 31.3043 2.55199V24.2439C31.3043 25.6511 32.4746 26.7959 33.913 26.7959H45V42.1077C45 42.7082 45.805 42.9717 46.1739 42.4907L59.8696 24.6267C59.9542 24.5163 60 24.382 60 24.2439V2.55199C60 1.14482 58.8299 0 57.3913 0ZM58.6957 24.0312L46.3043 40.1939V26.1579C46.3043 25.8055 46.0124 25.5199 45.6522 25.5199H33.913C33.1938 25.5199 32.6087 24.9475 32.6087 24.2439V2.55199C32.6087 1.84841 33.1938 1.276 33.913 1.276H57.3913C58.1105 1.276 58.6957 1.84841 58.6957 2.55199V24.0312ZM26.087 0H2.6087C1.17026 0 0 1.14482 0 2.55199V24.2439C0 25.6511 1.17026 26.7959 2.6087 26.7959H13.6957V42.1079C13.6957 42.7049 14.5004 42.9721 14.8696 42.4907L28.5652 24.6267C28.6499 24.5163 28.6957 24.382 28.6957 24.2439V2.55199C28.6957 1.14482 27.5254 0 26.087 0ZM27.3913 24.0312L15 40.1939V26.1579C15 25.8055 14.708 25.5199 14.3478 25.5199H2.6087C1.88948 25.5199 1.30435 24.9475 1.30435 24.2439V2.55199C1.30435 1.84841 1.88948 1.276 2.6087 1.276H26.087C26.8062 1.276 27.3913 1.84841 27.3913 2.55199V24.0312Z"
+                                            fill="#DDDDDD9C"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="logo-slider-main">
+            <div class="col-12 text-center">
+                <div class="title-inner">
+                    <span class="parents-text">
+                        PARTNERS </span>
+                    <h2 class="title ">Partners Who Trust Industrie</h2>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="logo-slider">
+                        <div class=" logo-item">
+                            <div>
+                                <img src="img/slider-img1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="logo-item">
+                            <div>
+                                <img src="img/slider-img2.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="logo-item">
+                            <div>
+                                <img src="img/slider-img3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="logo-item">
+                            <div>
+                                <img src="img/slider-img4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="logo-item">
+                            <div>
+                                <img src="img/slider-img4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="logo-item">
+                            <div>
+                                <img src="img/slider-img5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="logo-item">
+                            <div>
+                                <img src="img/slider-img6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+    </section>
+
+
+    <section class="update-sec">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-12 col-lg-9">
+                    <div class="tab-box-left our-box">
+                        <span>UPDATES</span>
+                        <h2>Articles & Blog Posts With Useful <br>Information
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-3 text-end mob-start">
+                    <div class="btn-box2 btn-4">
+                        <a href="#">More Reviews <span><img class="arrow-img" src="img/MicrosoftTeams-image.png"
+                                    alt=""></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                    <div class="update-box-img">
+                        <div class="oil-box-building">
+                            <ul>
+                                <li>
+                                    By <b>Sagar</b>
+
+                                </li>
+                                <li>Feb 8, 2024</li>
+                            </ul>
+                            <div class="supply-text">
+                                <a href="#" class="text-white">
+                                    <h3>Construction of a new high tech plant <br>in washingtons</h3>
+                                </a>
+
+                                <p>Industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                    galley of type and...</p>
+
+                                <div class="oil-box-btn1">
+                                    <a href="#" class="btn-3">Company </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 bg-color-b p-0">
+                            <div class="oil-box">
+                                <ul>
+                                    <li>
+                                        By <b>Sagar</b>
+
+                                    </li>
+                                    <li>Feb 8, 2024</li>
+                                </ul>
+                                <div class="supply-text">
+                                    <a href="#">
+                                        <h3 class="f-size">Building resilient supply chains for</h3>
+                                    </a>
+
+                                    <p class="color-text">Industry's standard dummy text ever...</p>
+
+                                    <div class="oil-box-btn">
+                                        <a href="#" class="btn-1">Oil Factory</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-0">
+                            <div class="oil-img">
+                                <img src="img/img-4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mar-b">
+                        <div class="col-lg-6 bg-color-b">
+                            <div class=" oil-box">
+                                <ul>
+                                    <li>
+                                        By <b>Sagar</b>
+
+                                    </li>
+                                    <li>Feb 8, 2024</li>
+                                </ul>
+                                <div class="supply-text">
+                                    <a href="#">
+                                        <h3 class="f-size">Factories technologies in interactive and</h3>
+                                    </a>
+
+                                    <p class="color-text">Industry's standard dummy text ever...</p>
+
+                                    <div class="oil-box-btn">
+                                        <a href="#" class="btn-1">Manufacture </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-0">
+                            <div class="oil-img">
+                                <img src="img/img-3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container-fluid z-index1">
+            <div class="row">
+                <div class="col-lg-7 text-center2">
+                    <div class="contect-box">
+                        <span>CONTACT</span>
+                        <h3>Have a Project in Mind? Contact With Us</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form by injected humour.</p>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12 col-lg-6 text-center2">
+                            <div class="add-box">
+                                <div class="icon-add">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="35" viewBox="0 0 30 35"
+                                        fill="none">
+                                        <path
+                                            d="M20.6984 22.653C24.3306 16.928 23.874 17.6423 23.9787 17.493C25.3011 15.6195 26 13.4144 26 11.1161C26 5.02098 21.0759 0 15 0C8.94387 0 4 5.01107 4 11.1161C4 13.4129 4.7136 15.6757 6.07933 17.5745L9.30147 22.6531C5.85647 23.1848 0 24.7696 0 28.2589C0 29.5309 0.826533 31.3436 4.76413 32.7562C7.5136 33.7425 11.1487 34.2857 15 34.2857C22.2017 34.2857 30 32.2452 30 28.2589C30 24.7689 24.1504 23.1859 20.6984 22.653ZM7.74993 16.4695C7.73893 16.4523 7.72747 16.4354 7.71547 16.4188C6.579 14.8483 6 12.9871 6 11.1161C6 6.09254 10.0271 2.00893 15 2.00893C19.9626 2.00893 24 6.09435 24 11.1161C24 12.9901 23.4319 14.7882 22.3569 16.3173C22.2606 16.4449 22.7632 15.6606 15 27.8966L7.74993 16.4695ZM15 32.2768C7.13373 32.2768 2 29.9543 2 28.2589C2 27.1195 4.63787 25.2459 10.4832 24.5156L14.1567 30.3055C14.3403 30.5949 14.6583 30.7701 14.9999 30.7701C15.3416 30.7701 15.6597 30.5948 15.8432 30.3055L19.5166 24.5156C25.3621 25.2459 28 27.1195 28 28.2589C28 29.9399 22.9125 32.2768 15 32.2768Z"
+                                            fill="#EE5C03"></path>
+                                        <path
+                                            d="M15.0039 6.09375C12.2469 6.09375 10.0039 8.34676 10.0039 11.1161C10.0039 13.8854 12.2469 16.1384 15.0039 16.1384C17.7609 16.1384 20.0039 13.8854 20.0039 11.1161C20.0039 8.34676 17.7609 6.09375 15.0039 6.09375ZM15.0039 14.1295C13.3497 14.1295 12.0039 12.7777 12.0039 11.1161C12.0039 9.45449 13.3497 8.10268 15.0039 8.10268C16.6581 8.10268 18.0039 9.45449 18.0039 11.1161C18.0039 12.7777 16.6581 14.1295 15.0039 14.1295Z"
+                                            fill="#EE5C03"></path>
+                                    </svg>
+                                </div>
+
+                                <div class="add-disc">
+                                    <h2>New York</h2>
+                                    <p>42 Mamnoun Street, Saba Carpet and Antiques Store, UK</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="add-box">
+                                <div class="icon-add">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                        fill="none">
+                                        <path
+                                            d="M23.7225 18.5848C23.1074 17.9453 22.3655 17.6034 21.5792 17.6034C20.7993 17.6034 20.051 17.9389 19.4106 18.5784L17.4068 20.573C17.242 20.4843 17.0771 20.402 16.9186 20.3197C16.6903 20.2057 16.4747 20.0981 16.2908 19.9841C14.4139 18.7937 12.7081 17.2424 11.0722 15.2353C10.2795 14.2348 9.74688 13.3927 9.36008 12.5379C9.88004 12.063 10.362 11.5691 10.8312 11.0943C11.0087 10.917 11.1863 10.7333 11.3638 10.556C12.6955 9.22637 12.6955 7.50412 11.3638 6.17444L9.63274 4.44585C9.43617 4.24957 9.23326 4.04695 9.04303 3.84433C8.66256 3.45176 8.26308 3.04652 7.85091 2.66662C7.23583 2.05876 6.50028 1.73584 5.72667 1.73584C4.95307 1.73584 4.20483 2.05876 3.57072 2.66662C3.56438 2.67295 3.56438 2.67295 3.55804 2.67928L1.40209 4.85109C0.590443 5.66156 0.127549 6.64932 0.0260924 7.79538C-0.126092 9.64427 0.419236 11.3665 0.837743 12.4936C1.86499 15.2606 3.39952 17.825 5.68862 20.573C8.46599 23.8845 11.8077 26.4995 15.625 28.3421C17.0834 29.0323 19.0301 29.8491 21.2051 29.9884C21.3383 29.9947 21.4778 30.001 21.6046 30.001C23.0694 30.001 24.2995 29.4755 25.2634 28.4307C25.2697 28.4181 25.2824 28.4117 25.2887 28.3991C25.6185 28.0002 25.9989 27.6393 26.3984 27.253C26.6711 26.9934 26.9501 26.7212 27.2227 26.4362C27.8505 25.784 28.1802 25.0242 28.1802 24.2454C28.1802 23.4603 27.8442 22.7068 27.2037 22.0736L23.7225 18.5848ZM25.9926 25.2522C25.9862 25.2522 25.9862 25.2585 25.9926 25.2522C25.7453 25.5181 25.4916 25.7587 25.219 26.0247C24.8068 26.4172 24.3883 26.8288 23.9952 27.291C23.3547 27.9749 22.6001 28.2978 21.6109 28.2978C21.5158 28.2978 21.4144 28.2978 21.3192 28.2914C19.436 28.1711 17.6858 27.4366 16.3732 26.8098C12.7842 25.0749 9.63274 22.6118 7.0139 19.4902C4.85161 16.8879 3.40586 14.4818 2.44836 11.8984C1.85865 10.3218 1.64305 9.0934 1.73817 7.93468C1.80158 7.19386 2.08692 6.57967 2.61323 6.05413L4.77552 3.89499C5.08623 3.60372 5.41596 3.44543 5.73935 3.44543C6.13884 3.44543 6.46223 3.68604 6.66514 3.88865C6.67148 3.89499 6.67782 3.90132 6.68417 3.90765C7.07097 4.26856 7.43875 4.64214 7.82555 5.04104C8.02212 5.24366 8.22503 5.44628 8.42795 5.65523L10.159 7.38381C10.8312 8.05498 10.8312 8.6755 10.159 9.34667C9.97515 9.5303 9.79761 9.71392 9.61372 9.89121C9.08107 10.4357 8.57379 10.9423 8.02212 11.4362C8.00944 11.4488 7.99676 11.4552 7.99042 11.4678C7.44509 12.0124 7.54654 12.5442 7.66068 12.9051C7.66702 12.9241 7.67336 12.9431 7.67971 12.9621C8.12992 14.0512 8.76402 15.077 9.72785 16.299L9.7342 16.3053C11.4843 18.4581 13.3296 20.1361 15.365 21.4214C15.625 21.5861 15.8913 21.719 16.145 21.8457C16.3732 21.9596 16.5888 22.0673 16.7727 22.1812C16.7981 22.1939 16.8235 22.2129 16.8488 22.2256C17.0644 22.3332 17.2673 22.3839 17.4766 22.3839C18.0029 22.3839 18.3326 22.0546 18.4404 21.947L20.609 19.7815C20.8246 19.5662 21.1671 19.3066 21.5665 19.3066C21.9597 19.3066 22.2831 19.5535 22.4796 19.7688C22.486 19.7752 22.486 19.7752 22.4923 19.7815L25.9862 23.2703C26.6394 23.9162 26.6394 24.581 25.9926 25.2522Z"
+                                            fill="#EE5C03"></path>
+                                        <path
+                                            d="M16.2163 7.13613C17.8777 7.41473 19.3869 8.19988 20.5917 9.40292C21.7964 10.606 22.5764 12.1129 22.8617 13.7719C22.9315 14.1898 23.2929 14.481 23.7051 14.481C23.7558 14.481 23.8002 14.4747 23.8509 14.4684C24.3202 14.3924 24.6309 13.9492 24.5548 13.4806C24.2124 11.4734 23.2612 9.64353 21.8091 8.19355C20.357 6.74356 18.5245 5.79379 16.5144 5.45187C16.0451 5.37589 15.6076 5.68615 15.5252 6.14837C15.4427 6.61059 15.7471 7.06015 16.2163 7.13613Z"
+                                            fill="#EE5C03"></path>
+                                        <path
+                                            d="M29.9883 13.2338C29.4239 9.92864 27.864 6.92103 25.4671 4.52761C23.0702 2.13419 20.0582 0.576563 16.7482 0.0130318C16.2853 -0.0692817 15.8478 0.247309 15.7654 0.709531C15.6893 1.17808 16 1.61498 16.4692 1.69729C19.4241 2.19751 22.1191 3.59683 24.2623 5.73065C26.4056 7.8708 27.8006 10.5618 28.3016 13.5124C28.3713 13.9303 28.7328 14.2216 29.1449 14.2216C29.1956 14.2216 29.24 14.2153 29.2908 14.2089C29.7537 14.1393 30.0707 13.6961 29.9883 13.2338Z"
+                                            fill="#EE5C03"></path>
+                                    </svg>
+                                </div>
+
+                                <div class="add-disc">
+                                    <h2>Phone Number</h2>
+                                    <a href="tel:971 551 579 261">+971 551 579 261
+                                    </a><br>
+                                    <a href="tel:97 155 596 1659"> +97 155 596 1659</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gaprow">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="add-box">
+                                <div class="icon-add">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" viewBox="0 0 30 30"
+                                        fill="none">
+                                        <path
+                                            d="M0.590569 30H29.4095C29.5661 30 29.7163 29.9369 29.8271 29.8245C29.9378 29.7121 30 29.5597 30 29.4007V12.5559C29.997 12.4559 29.9726 12.3579 29.9283 12.2685C29.884 12.1792 29.8209 12.1008 29.7436 12.0388L28.1779 10.669V2.83051C28.1753 2.67336 28.1119 2.52356 28.0014 2.41338C27.891 2.30321 27.7423 2.24148 27.5875 2.24151H18.4097L16.4594 0.529288C16.0484 0.187052 15.5333 0 15.0017 0C14.4701 0 13.955 0.187052 13.5441 0.529288L11.5904 2.24151H2.41263C2.25776 2.24148 2.10909 2.30321 1.99863 2.41338C1.88818 2.52356 1.8248 2.67336 1.82215 2.83051V10.6862L0.273395 12.0251C0.187807 12.0834 0.117959 12.1625 0.0702202 12.2552C0.0224812 12.348 -0.00162984 12.4513 8.55304e-05 12.5559V29.4007C8.55304e-05 29.5597 0.062297 29.7121 0.173034 29.8245C0.283771 29.9369 0.433963 30 0.590569 30ZM9.38033 20.9355L1.19117 28.0583V13.8504L9.38033 20.9355ZM28.8055 13.8332V28.0994L20.6063 20.9389L28.8055 13.8332ZM19.486 21.5485L27.8 28.8014H2.15619L10.4837 21.5485H19.486ZM28.4917 12.5148L28.1779 12.7854V12.2614L28.4917 12.5148ZM14.31 1.45389C14.5083 1.29894 14.7515 1.21492 15.0017 1.21492C15.252 1.21492 15.4952 1.29894 15.6934 1.45389L16.591 2.24151H13.4125L14.31 1.45389ZM3.00311 3.42979H26.997V13.8093L19.459 20.3499H10.5208L2.98287 13.823C2.99644 13.7739 3.00326 13.7232 3.00311 13.6723V3.42979ZM1.82215 12.8196L1.48473 12.5388L1.82215 12.258V12.8196Z"
+                                            fill="#EE5C03"></path>
+                                        <path
+                                            d="M13.2998 16.7201C14.7914 17.1362 16.3818 16.9802 17.7673 16.2817C17.9069 16.2095 18.0125 16.084 18.0609 15.9328C18.1093 15.7815 18.0965 15.617 18.0254 15.4753C17.9542 15.3336 17.8306 15.2264 17.6815 15.1773C17.5325 15.1281 17.3704 15.1411 17.2308 15.2133C16.1244 15.7667 14.8603 15.9026 13.6642 15.5968C10.4284 14.3401 11.3023 10.8437 11.3293 10.6965C11.5891 9.70339 12.8679 7.183 15.682 7.39874C18.8436 7.64873 18.8335 10.6109 18.7998 11.2033C18.7289 12.4361 18.0304 13.371 17.4703 13.371H17.4501C17.4047 13.3739 17.3591 13.3668 17.3166 13.3502C17.2741 13.3337 17.2356 13.3081 17.2038 13.2751C17.0698 13.0413 17.013 12.7701 17.0418 12.5012L17.44 9.29588C17.44 9.26849 17.44 9.24452 17.44 9.22055C17.4415 9.07215 17.3887 8.92845 17.2919 8.81728C17.195 8.7061 17.061 8.63535 16.9156 8.61873C16.7703 8.60211 16.6241 8.64079 16.5053 8.7273C16.3865 8.8138 16.3035 8.94197 16.2725 9.08699C15.9262 8.80318 15.4991 8.63991 15.0544 8.62127H15.0038C13.8026 8.62127 12.4158 9.59039 12.1627 11.4225C12.0368 12.0696 12.1644 12.741 12.5185 13.2941C12.8726 13.8472 13.4252 14.2384 14.059 14.3846C14.4264 14.4475 14.8027 14.4315 15.1636 14.3377C15.5245 14.244 15.862 14.0744 16.1544 13.8401C16.2012 13.9164 16.2543 13.9886 16.313 14.0559C16.4488 14.2145 16.6161 14.3423 16.8039 14.4308C16.9917 14.5193 17.1958 14.5666 17.4028 14.5695C18.7087 14.6312 19.8728 13.1415 19.9807 11.2718C20.1123 8.92262 18.8639 6.44675 15.7697 6.20362C12.544 5.95021 10.6612 8.5699 10.1888 10.3917C9.23056 14.0764 11.6735 16.0968 13.2998 16.7201ZM15.8777 12.2683C15.7564 12.5814 15.5344 12.8438 15.2478 13.0128C14.9612 13.1819 14.6267 13.2478 14.2986 13.1997C13.9599 13.113 13.6684 12.8945 13.4871 12.5914C13.3059 12.2883 13.2495 11.925 13.3302 11.58C13.5124 10.2821 14.4403 9.80955 15.0173 9.80955H15.0409C15.5639 9.80955 15.9519 10.4431 15.9621 10.4568C15.9967 10.5185 16.0425 10.5731 16.097 10.6177L15.8777 12.2683Z"
+                                            fill="#EE5C03"></path>
+                                    </svg>
+                                </div>
+
+                                <div class="add-disc">
+                                    <h2>Email Address</h2>
+                                    <p>Interested in working with us?
+                                        support.industrie@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="add-box">
+                                <div class="icon-add">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="50"
+                                        height="30">
+                                        <path
+                                            d="M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0Zm0,22A10,10,0,1,1,22,12,10.011,10.011,0,0,1,12,22Z">
+                                        </path>
+                                        <path
+                                            d="M12,6a1,1,0,0,0-1,1v4.325L7.629,13.437a1,1,0,0,0,1.062,1.7l3.84-2.4A1,1,0,0,0,13,11.879V7A1,1,0,0,0,12,6Z">
+                                        </path>
+                                    </svg>
+                                </div>
+
+                                <div class="add-disc">
+                                    <h2>Opening Hour</h2>
+                                    <p>Mon - Fri: 09am - 07pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+
+                    <form id="contact" action="" method="post">
+                        <h3>Get in Touch</h3>
+                        <p>The point of using Lorem Ipsum is that it has more-or-less normal</p>
+                        <fieldset>
+                            <input class="input-bg-color" placeholder="Fill Name" type="text" tabindex="1" required
+                                autofocus>
+                        </fieldset>
+                        <fieldset>
+                            <input class="input-bg-color" placeholder=" Email Address" type="email" tabindex="2"
+                                required>
+                        </fieldset>
+                        <fieldset>
+                            <input class="input-bg-color" placeholder="Your Inquiry (optional)" type="tel" tabindex="3"
+                                required>
+                        </fieldset>
+
+                        <fieldset>
+                            <textarea class="input-bg-color" placeholder="Write Here..." tabindex="5"
+                                required></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <button class="submit-btn" name="submit" type="submit" id="contact-submit"
+                                data-submit="...Sending">Send Message <span><img class="arrow-img"
+                                        src="img/MicrosoftTeams-image.png" alt=""></span></button>
+                        </fieldset>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row padd-space mob-gap custom-container">
+                <div class="col-md-12 col-lg-3 text-center2">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img class="f-logo" src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-9">
+                    <div class="subscribe-box">
+                        <h6>Subscribe for the latest news. Stay updated on the latest trends.</h6>
+                        <form class="subscribe-form2">
+                            <div class="input-group2">
+                                <input type="text" class="f-place" name="email" placeholder="Enter Your Email">
+                                <button class="footer-sub-btn">Subscribe Now <span><img class="arrow-img"
+                                            src="img/MicrosoftTeams-image.png" alt=""></span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t"></div>
+            <div class="footer-menu">
+                <div class="row">
+                    
+                    <div class="f-main-box ">
+                        <div class=" f-box1">
+                            <h3>About Company</h3>
+                            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                                Ipsums.</p>
+                            <div class="since-box">Since 2007</div>
+                        </div>
+                        <div class="f-box1 f-box2">
+                            <h3>Useful Links</h3>
+                            <div class="menu-link">
+                                <div class="f-list">
+                                    <ul>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span> About Us</a></li>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Projects</a></li>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Careers</a></li>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Blog</a></li>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                                <div class="f-list">
+                                    <ul>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Services</a></li>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Pricing</a></li>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Team</a></li>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Contact</a></li>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Terms of use</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="f-box1 f-box3">
+                             <div class="f-add-box">
+                                <h3>Useful Links</h3>
+                                <p class="f-pl">42 Mamnoun Street, Saba Carpet and Antiques Store, UK</p>
+                             </div>
+
+                             <div class="f-add-box">
+                                <h3>Email Address</h3>
+                                <ul class="f-list-number">
+                                    <li><a href="mailto:Interested in working with us?">Interested in working with us?</a></li>
+                                    
+                                    <li><a href="mailto:support.industrie@gmail.com"> support.industrie@gmail.com</a></li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="f-box1 f-box4">
+                            <div class="f-add-box number-list">
+                                <h3>Phone Number</h3>
+                                <ul class="f-list-number">
+                                    <li><a href="tel:+971 551 579 261">+971 551 579 261</a></li>
+                                    
+                                    <li><a href="tel:+97 155 596 1659">+97 155 596 1659</a></li>
+                                </ul>
+                             </div>
+                             <div class="f-add-box">
+                                <h3>Follow Us</h3>
+                                <ul class="social-icon-list">
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                      </svg></a></li>
+                                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                      </svg></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                </ul>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  <div class="copy-right text-center">
+      <p>© 2024 industrie</p>
+  </div>
+
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

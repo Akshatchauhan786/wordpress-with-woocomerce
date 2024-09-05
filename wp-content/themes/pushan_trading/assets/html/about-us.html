@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-main-header">
+            <div class="container-fluid">
+                <div class="custom-container">
+                    <div class="row">
+                        <div class="top-header">
+                            <div class="top-left">
+                                <ul>
+                                    <li><a href="#">
+                                            <!-- <span><i class="fa fa-map-marker" aria-hidden="true"></i> </span>-->
+                                            <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" width="18"
+                                                height="22" viewBox="0 0 18 22" fill="none">
+                                                <path
+                                                    d="M9 18.8995L13.9497 13.9497C16.6834 11.2161 16.6834 6.78392 13.9497 4.05025C11.2161 1.31658 6.78392 1.31658 4.05025 4.05025C1.31658 6.78392 1.31658 11.2161 4.05025 13.9497L9 18.8995ZM9 21.7279L2.63604 15.364C-0.87868 11.8492 -0.87868 6.15076 2.63604 2.63604C6.15076 -0.87868 11.8492 -0.87868 15.364 2.63604C18.8787 6.15076 18.8787 11.8492 15.364 15.364L9 21.7279ZM9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.8954 7 7 7.89543 7 9C7 10.1046 7.8954 11 9 11ZM9 13C6.79086 13 5 11.2091 5 9C5 6.79086 6.79086 5 9 5C11.2091 5 13 6.79086 13 9C13 11.2091 11.2091 13 9 13Z"
+                                                    fill="#ee5c03"></path>
+                                            </svg>Westheimer 96
+                                            Road 1734.
+                                        </a></li>
+                                    <li><a href="#"><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                                            sales@pusantrading.com
+                                        </a></li>
+                                    <li><a href="#">
+                                            <!--<span><i class="fa fa-clock-o" aria-hidden="true"></i></span>--><svg
+                                                class="clock-icon" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="currentColor">
+                                                <path
+                                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM13 12H17V14H11V7H13V12Z">
+                                                </path>
+                                            </svg> Mon - Sat
+                                            10.00 - 18.00</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="top-right">
+                                <ul>
+                                    <li><a href="#">Follow Us:</a></li>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg header_main main-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="logo" class="img-fluid">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none"><path d="M8.55566 11H1.55566C1.29045 11 1.03609 11.1054 0.848557 11.2929C0.661021 11.4804 0.555664 11.7348 0.555664 12V19C0.555664 19.2652 0.661021 19.5196 0.848557 19.7071C1.03609 19.8946 1.29045 20 1.55566 20H8.55566C8.82088 20 9.07523 19.8946 9.26277 19.7071C9.45031 19.5196 9.55566 19.2652 9.55566 19V12C9.55566 11.7348 9.45031 11.4804 9.26277 11.2929C9.07523 11.1054 8.82088 11 8.55566 11ZM7.55566 18H2.55566V13H7.55566V18ZM19.5557 0H12.5557C12.2904 0 12.0361 0.105357 11.8486 0.292893C11.661 0.48043 11.5557 0.734784 11.5557 1V8C11.5557 8.26522 11.661 8.51957 11.8486 8.70711C12.0361 8.89464 12.2904 9 12.5557 9H19.5557C19.8209 9 20.0752 8.89464 20.2628 8.70711C20.4503 8.51957 20.5557 8.26522 20.5557 8V1C20.5557 0.734784 20.4503 0.48043 20.2628 0.292893C20.0752 0.105357 19.8209 0 19.5557 0ZM18.5557 7H13.5557V2H18.5557V7ZM19.5557 11H12.5557C12.2904 11 12.0361 11.1054 11.8486 11.2929C11.661 11.4804 11.5557 11.7348 11.5557 12V19C11.5557 19.2652 11.661 19.5196 11.8486 19.7071C12.0361 19.8946 12.2904 20 12.5557 20H19.5557C19.8209 20 20.0752 19.8946 20.2628 19.7071C20.4503 19.5196 20.5557 19.2652 20.5557 19V12C20.5557 11.7348 20.4503 11.4804 20.2628 11.2929C20.0752 11.1054 19.8209 11 19.5557 11ZM18.5557 18H13.5557V13H18.5557V18ZM8.55566 0H1.55566C1.29045 0 1.03609 0.105357 0.848557 0.292893C0.661021 0.48043 0.555664 0.734784 0.555664 1V8C0.555664 8.26522 0.661021 8.51957 0.848557 8.70711C1.03609 8.89464 1.29045 9 1.55566 9H8.55566C8.82088 9 9.07523 8.89464 9.26277 8.70711C9.45031 8.51957 9.55566 8.26522 9.55566 8V1C9.55566 0.734784 9.45031 0.48043 9.26277 0.292893C9.07523 0.105357 8.82088 0 8.55566 0ZM7.55566 7H2.55566V2H7.55566V7Z" fill="#616161"></path></svg>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Catalogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="search_btn">
+            <div class="search_item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span><i class="fa fa-times" aria-hidden="true"></i></span>
+            </div>
+              
+                <div class="search_head">
+                    <span class="fa fa-search"></span>
+                    <input placeholder="Searching....">
+                  </div>
+           
+                <div>
+                <a href="https://wa.me/+971 4 221 6013">Get In Touch<i class="fa fa-whatsapp" aria-hidden="true"></i></a></div>
+          </div>
+        </div>
+      </nav>
+
+
+        <!-- offcanvas -->
+
+        <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button> -->
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                    <img class="img-fluid" src="img/green-logo.png" alt="">
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus fugit, tempora nisi quisquam
+                    amet asperiores a excepturi voluptatem recusandae suscipit quae cupiditate et officiis pariatur
+                    voluptas ullam commodi obcaecati repellat nobis quasi consequuntur assumenda.
+
+                </p>
+            </div>
+        </div>
+        <!-- offcanvas -->
+        <!-- modale-popo -->
+
+
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+
+                <a class="close" href="#"><i class="fa fa-search search-2" aria-hidden="true"></i>
+                </a>
+                <div class="content">
+                    <input type="text" placeholder="search">
+
+                </div>
+            </div>
+        </div>
+        <!-- modale end -->
+    </header>
+
+    <section class="banner contact-banner2">
+        <div class="inner-slick-carousel">
+            <div class="slider-img" style="background-image: url(./img/inner_banner.jpg); ">  
+              <div class="container">
+                <div class="banner-text">
+                    <h1>About </h1>
+                </div> 
+              </div>        
+            </div>
+        </div>
+
+    </section>
+   
+
+<section class="about_indust_sec top_gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="our-box">
+                    <span>ABOUT INDUSTRIE</span>
+                    <h2>Welcome to Industrie, a leading industry innovator with a rich history of excellence.
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="about_indust_col">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about_ind_col_box">
+                       <div class="row">
+                        <div class="col-lg-6">
+                            <img src="../html/img/about/about-page-img2.jpg" alt="img">
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="../html/img/about/Icon.png" alt="img">
+                        </div>
+                       </div>
+                        
+                    </div>
+                    <div class="about_ind_col_box_2">
+                        <h3>Our Mission</h3>
+                        <p>Welcome to Industrie, a leading industry innovator with a rich history of excellence. With a passion for precision.</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="about_ind_col_box">
+                       <div class="row">
+                        <div class="col-lg-6">
+                            <img src="../html/img/about/about-page-img2.jpg" alt="img">
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="../html/img/about/Icon.png" alt="img">
+                        </div>
+                       </div>
+                        
+                    </div>
+                    <div class="about_ind_col_box_2">
+                        <h3>Our Mission</h3>
+                        <p>Welcome to Industrie, a leading industry innovator with a rich history of excellence. With a passion for precision.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="our_histry_sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="our-box our_histry_context">
+                    <span>OUR HISTORY</span>
+                    <h2>Company Journey
+                    </h2>
+                </div>
+
+                <div class="tab-boxs">
+
+
+                    <div id="container">
+                        <div class="tabs-nav">
+                            <ul>
+                                <li class="active"><a href="#tab1">In 1990</a></li>
+                                <li class=""><a href="#tab2">In 2000 </a></li>
+                                <li class=""><a href="#tab3"> In 2007</a></li>
+                                <li class=""><a href="#tab4"> In 2018</a></li>
+                                <li class=""><a href="#tab5"> In 2024</a></li>
+
+
+                            </ul>
+                        </div>
+
+                        <section class="tabs-content tab_box_type">
+                            <div id="tab1" style="display: flex;">
+                                <div class="tab_content_box">
+                                    <div class="tab_context">
+                                        <img src="../html/img/about/5.jpg" alt="img">
+                                   </div>
+                                   <div class="tab_context">
+                                    <h3>Journey Was Started</h3>
+                                    <p>Welcome to Industrie, a leading industry innovator with a rich history of excellence. With a 
+                                        passion for precision and a commitment to quality, we have been empowering industries and driving progress.</p>
+                                    <ul class="tab-list">
+                                        <li>Quality Control System</li>
+                                        <li>Building Quality Industrial</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            </div>
+
+                            <div id="tab2" style="display: none;">
+                                <div class="tab_content_box">
+                                    <div class="tab_context">
+                                        <img src="../html/img/about/5.jpg" alt="img">
+                                   </div>
+                                   <div class="tab_context">
+                                    <h3>Journey Was Started</h3>
+                                    <p>Welcome to Industrie, a leading industry innovator with a rich history of excellence. With a 
+                                        passion for precision and a commitment to quality, we have been empowering industries and driving progress.</p>
+                                    <ul class="tab-list">
+                                        <li>Quality Control System</li>
+                                        <li>Building Quality Industrial</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div id="tab3" style="display: none;">
+                                <div class="tab_content_box">
+                                    <div class="tab_context">
+                                        <img src="../html/img/about/5.jpg" alt="img">
+                                   </div>
+                                   <div class="tab_context">
+                                    <h3>Journey Was Started</h3>
+                                    <p>Welcome to Industrie, a leading industry innovator with a rich history of excellence. With a 
+                                        passion for precision and a commitment to quality, we have been empowering industries and driving progress.</p>
+                                    <ul class="tab-list">
+                                        <li>Quality Control System</li>
+                                        <li>Building Quality Industrial</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                            <div id="tab4" style="display: none;">
+                                <div class="tab_content_box">
+                                    <div class="tab_context">
+                                        <img src="../html/img/about/5.jpg" alt="img">
+                                   </div>
+                                   <div class="tab_context">
+                                    <h3>Journey Was Started</h3>
+                                    <p>Welcome to Industrie, a leading industry innovator with a rich history of excellence. With a 
+                                        passion for precision and a commitment to quality, we have been empowering industries and driving progress.</p>
+                                    <ul class="tab-list">
+                                        <li>Quality Control System</li>
+                                        <li>Building Quality Industrial</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                            <div id="tab5" style="display: none;">
+                           <div class="tab_content_box">
+                                <div class="tab_context">
+                                    <img src="../html/img/about/5.jpg" alt="img">
+                               </div>
+                               <div class="tab_context">
+                                <h3>Journey Was Started</h3>
+                                <p>Welcome to Industrie, a leading industry innovator with a rich history of excellence. With a 
+                                    passion for precision and a commitment to quality, we have been empowering industries and driving progress.</p>
+                                <ul class="tab-list">
+                                    <li>Quality Control System</li>
+                                    <li>Building Quality Industrial</li>
+                                </ul>
+                            </div>
+                        </div>
+                            </div>
+
+
+                        </section>
+                    </div>
+                </div>
+
+                <!-- <div class="tab-boxs our_histry_tab">
+
+
+                    <div id="container">
+                        <div class="tabs-nav">
+                            <ul>
+                                <li class="active"><a href="#tab1">In 1990</a></li>
+                                <li class=""><a href="#tab2">In 2000 </a></li>
+                                <li class=""><a href="#tab3"> In 2007</a></li>
+                                <li class=""><a href="#tab4"> In 2018</a></li>
+                                <li class=""><a href="#tab5"> In 2024</a></li>
+
+                            </ul>
+                        </div>
+
+                        <section class="tabs-content">
+                            <div id="tab1" style="display: block;">
+                                <div>
+                                    <img src="../html/img/about/5.jpg" alt="img">
+                                </div>
+                                <div>
+                                <h3>Journey Was Started</h3>
+                                <p>Welcome to Industrie, a leading industry innovator with a rich history of excellence. With a 
+                                    passion for precision and a commitment to quality, we have been empowering industries and driving progress.</p>
+                                <ul class="tab-list">
+                                    <li>Quality Control System</li>
+                                    <li>Building Quality Industrial</li>
+                                </ul>
+                                </div>
+                            </div>
+                           
+                        </section>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="ENGINEER industry_expert_sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="tab-box-left our-box">
+                    <span>ENGINEER</span>
+                    <h2>The Best industry experts
+                    </h2>
+    
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="btn-box">
+                    <a href="#" class="btn-contact" tabindex="0">Become a Member <span><img class="arrow-img banner-icon" src="img/MicrosoftTeams-image.png" alt=""></span>
+                    </a>
+                </div>
+            </div>
+           
+        </div>
+        <div class="row pt-3">
+            <div class="col-md-12 col-lg-4">
+                <div class="eng-box">
+                    <div class="engineer-img">
+                        <img src="img/engineer-1.jpg" alt="">
+                    </div>
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="engineer-disc">
+                    <h4>Penelopa Miller</h4>
+                    <span>CEO of Industrie</span>
+                </div>
+
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <div class="eng-box">
+                    <div class="engineer-img">
+                        <img src="img/engineer-2.jpg" alt="">
+                    </div>
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="engineer-disc">
+                    <h4>Penelopa Miller</h4>
+                    <span>CEO of Industrie</span>
+                </div>
+
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <div class="eng-box">
+                    <div class="engineer-img">
+                        <img src="img/engineer-3.jpg" alt="">
+                    </div>
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="engineer-disc">
+                    <h4>Penelopa Miller</h4>
+                    <span>CEO of Industrie</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="company_achiv_sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="our-box our_histry_context">
+                    <span>OUR HISTORY</span>
+                    <h2>Company Journey
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="projectFacts" class="sectionClass">
+                    <div class="fullWidth eight columns">
+                        <div class="projectFactsWrap ">
+                            <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+                                
+                                <p id="number1" class="number">12</p>
+                                <span></span>
+                                <p>Projects done</p>
+                            </div>
+                            <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
+                               
+                                <p id="number2" class="number">55</p>
+                                <span></span>
+                                <p>Happy clients</p>
+                            </div>
+                            <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+                                
+                                <p id="number3" class="number">359</p>
+                                <span></span>
+                                <p>Cups of coffee</p>
+                            </div>
+                            <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
+                                
+                                <p id="number4" class="number">246</p>
+                                <span></span>
+                                <p>Photos taken</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="company_achiv_sec_col">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="achive_start_box">
+                        <img src="../html/img/about/about_001.jpg" alt="">
+                        <div class="achive_content">
+                            <span>Start Your Project</span>
+                            <h3>Metallurgical products
+                                of the highest class</h3>
+                            <div class="btn-box">
+                                <a href="#" class="btn-contact" tabindex="0">Contact Us <span><img class="arrow-img banner-icon" src="img/MicrosoftTeams-image.png" alt=""></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div>
+                        <img src="../html/img/about/prog.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="what_client_say">
+    <div class="client_img">
+        <img src="../html/img/about/images_11.jpg" alt="">
+    </div>
+    <div class="client_box_tab">
+    <div class="client_testimonial_content">
+        <div class="tab-box-left our-box">
+            <span>WHY CHOOSE US</span>
+            <h2>What Client Say
+            </h2>
+        </div>
+      <div class="testimonial_slide">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="textmonials-box">
+                    <div class="box-textmonial">
+                        <div class="text-icon">
+                            <img src="img/textmonials-img.jpg" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="29" viewBox="0 0 40 29" fill="none"><path opacity="0.2" d="M2.85714 29H11.4286L17.1429 17.4V0H0V17.4H8.57143L2.85714 29ZM25.7143 29H34.2857L40 17.4V0H22.8571V17.4H31.4286L25.7143 29Z" fill="white"></path></svg>
+                        </div>
+                        <div class="text-disc">
+                            <h4>Best Company!</h4>
+                            <span>
+                                Podcasting operational change management inside of workflows to
+                establish a framework seamless key performance indicators.            </span>
+                        </div>
+                    </div>
+
+                    <div class="star-main">
+                        <div class="star-box">
+                           <h3>John Maxwell</h3>
+                           <p>John Maxwell Team Manager</p>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+</div>
+</div>
+
+
+<section class="our_client_sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div>
+                    <span class="parents-text">COMPANY</span>
+                    <h2>Our client and partners
+                    </h2>
+                    <p>Engines prime movers and exhaust gas turbochargers.</p>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="company_client_box">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="logo-item" style="width: 100%; display: inline-block;">
+                            <div>
+                                <img src="img/slider-img4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="logo-item" style="width: 100%; display: inline-block;">
+                            <div>
+                                <img src="img/slider-img5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="logo-item" style="width: 100%; display: inline-block;">
+                            <div>
+                                <img src="img/slider-img4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="logo-item" style="width: 100%; display: inline-block;">
+                            <div>
+                                <img src="img/slider-img5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="logo-item" style="width: 100%; display: inline-block;">
+                            <div>
+                                <img src="img/slider-img4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="logo-item" style="width: 100%; display: inline-block;">
+                            <div>
+                                <img src="img/slider-img5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="logo-item" style="width: 100%; display: inline-block;">
+                            <div>
+                                <img src="img/slider-img4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="logo-item" style="width: 100%; display: inline-block;">
+                            <div>
+                                <img src="img/slider-img5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="textmonial news_blog">
+    <div class="container">
+        <div class="row mob-gap align-items-center">
+            <div class="col-md-12 col-lg-6">
+                <div class="tab-box-left our-box">
+                    <span>NEWS & BLOG</span>
+                    <h2>Discover the future of factories and industries
+                    </h2>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="textmonials-boxs">
+
+                <div class="col-md-12 col-lg-4 px-2">
+                    <div class="blog-box white-box blog_about_box">
+                        <div class="blog-img">
+                            <img src="../html/img/about/pro_004.jpg" alt="Digital Marketing For Education: A Complete Marketing Strategy"> 
+                            <div class="blog-tag">
+                                <span>Manufacture  </span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date-author">
+                               
+                            </div>
+                            <a href="#"><h3 class="h3-title">
+                                Interactive technologies in factories and plants</h3></a>
+                           <ul><li><span>sagar</span></li>
+                           <li> Feb 8, 2024 </li></ul>
+                            <div class="blog-date">
+                                <div>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                        <span>Sep 06, 2023</span>
+                                                                    </div>
+                                   <div class="arrow_blog_about">
+                                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                     </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 px-2">
+                    <div class="blog-box white-box blog_about_box">
+                        <div class="blog-img">
+                            <img src="../html/img/about/pro_004.jpg" alt="Digital Marketing For Education: A Complete Marketing Strategy"> 
+                            <div class="blog-tag">
+                                <span>Manufacture  </span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date-author">
+                               
+                            </div>
+                            <a href="#"><h3 class="h3-title">
+                                Interactive technologies in factories and plants</h3></a>
+                           <ul><li><span>sagar</span></li>
+                           <li> Feb 8, 2024 </li></ul>
+                            <div class="blog-date">
+                                <div>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                        <span>Sep 06, 2023</span>
+                                                                    </div>
+                                   <div class="arrow_blog_about">
+                                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                     </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 px-2">
+                    <div class="blog-box white-box blog_about_box">
+                        <div class="blog-img">
+                            <img src="../html/img/about/pro_004.jpg" alt="Digital Marketing For Education: A Complete Marketing Strategy"> 
+                            <div class="blog-tag">
+                                <span>Manufacture  </span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date-author">
+                               
+                            </div>
+                            <a href="#"><h3 class="h3-title">
+                                Interactive technologies in factories and plants</h3></a>
+                           <ul><li><span>sagar</span></li>
+                           <li> Feb 8, 2024 </li></ul>
+                            <div class="blog-date">
+                                <div>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                        <span>Sep 06, 2023</span>
+                                                                    </div>
+                                   <div class="arrow_blog_about">
+                                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                     </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 px-2">
+                    <div class="blog-box white-box blog_about_box">
+                        <div class="blog-img">
+                            <img src="../html/img/about/pro_004.jpg" alt="Digital Marketing For Education: A Complete Marketing Strategy"> 
+                            <div class="blog-tag">
+                                <span>Manufacture  </span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date-author">
+                               
+                            </div>
+                            <a href="#"><h3 class="h3-title">
+                                Interactive technologies in factories and plants</h3></a>
+                           <ul><li><span>sagar</span></li>
+                           <li> Feb 8, 2024 </li></ul>
+                            <div class="blog-date">
+                                <div>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                        <span>Sep 06, 2023</span>
+                                                                    </div>
+                                   <div class="arrow_blog_about">
+                                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                     </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 px-2">
+                    <div class="blog-box white-box blog_about_box">
+                        <div class="blog-img">
+                            <img src="../html/img/about/pro_004.jpg" alt="Digital Marketing For Education: A Complete Marketing Strategy"> 
+                            <div class="blog-tag">
+                                <span>Manufacture  </span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date-author">
+                               
+                            </div>
+                            <a href="#"><h3 class="h3-title">
+                                Interactive technologies in factories and plants</h3></a>
+                           <ul><li><span>sagar</span></li>
+                           <li> Feb 8, 2024 </li></ul>
+                            <div class="blog-date">
+                                <div>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                        <span>Sep 06, 2023</span>
+                                                                    </div>
+                                   <div class="arrow_blog_about">
+                                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                     </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row padd-space mob-gap custom-container">
+                <div class="col-md-12 col-lg-3 text-center2">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img class="f-logo" src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-9">
+                    <div class="subscribe-box">
+                        <h6>Subscribe for the latest news. Stay updated on the latest trends.</h6>
+                        <form class="subscribe-form2">
+                            <div class="input-group2">
+                                <input type="text" class="f-place" name="email" placeholder="Enter Your Email">
+                                <button class="footer-sub-btn">Subscribe Now <span><img class="arrow-img"
+                                            src="img/MicrosoftTeams-image.png" alt=""></span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t"></div>
+            <div class="footer-menu">
+                <div class="row">
+                    
+                    <div class="f-main-box ">
+                        <div class=" f-box1">
+                            <h3>About Company</h3>
+                            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                                Ipsums.</p>
+                            <div class="since-box">Since 2007</div>
+                        </div>
+                        <div class="f-box1 f-box2">
+                            <h3>Useful Links</h3>
+                            <div class="menu-link">
+                                <div class="f-list">
+                                    <ul>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span> About Us</a></li>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Projects</a></li>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Careers</a></li>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Blog</a></li>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                                <div class="f-list">
+                                    <ul>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Services</a></li>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Pricing</a></li>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Team</a></li>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Contact</a></li>
+                                        <li><a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Terms of use</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="f-box1 f-box3">
+                             <div class="f-add-box">
+                                <h3>Useful Links</h3>
+                                <p class="f-pl">42 Mamnoun Street, Saba Carpet and Antiques Store, UK</p>
+                             </div>
+
+                             <div class="f-add-box">
+                                <h3>Email Address</h3>
+                                <ul class="f-list-number">
+                                    <li><a href="mailto:Interested in working with us?">Interested in working with us?</a></li>
+                                    
+                                    <li><a href="mailto:support.industrie@gmail.com"> support.industrie@gmail.com</a></li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="f-box1 f-box4">
+                            <div class="f-add-box number-list">
+                                <h3>Phone Number</h3>
+                                <ul class="f-list-number">
+                                    <li><a href="tel:+971 551 579 261">+971 551 579 261</a></li>
+                                    
+                                    <li><a href="tel:+97 155 596 1659">+97 155 596 1659</a></li>
+                                </ul>
+                             </div>
+                             <div class="f-add-box">
+                                <h3>Follow Us</h3>
+                                <ul class="social-icon-list">
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                      </svg></a></li>
+                                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                      </svg></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                </ul>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  <div class="copy-right text-center">
+      <p>© 2024 industrie</p>
+  </div>
+
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+        
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+   
+    <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
